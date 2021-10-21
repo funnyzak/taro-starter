@@ -4,6 +4,7 @@
     "private": true,
     "description": "Taro React Typescript Template App",
     "homepage": "https://funnyzak.github.io/taro-react-typescript-template",
+    "repository": "https://github.com/funnyzak/taro-react-typescript-template",
     "templateInfo": {
         "name": "taro-ui",
         "typescript": true,
