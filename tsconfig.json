@@ -7,20 +7,40 @@
       "moduleResolution": "node",
       "experimentalDecorators": true,
       "noImplicitAny": false,
-      "allowSyntheticDefaultImports": true,
       "outDir": "lib",
       "noUnusedParameters": true,
       "noUnusedLocals": false,
-      "strictNullChecks": true,
-      "sourceMap": true,
+     // 允许从没有设置默认导出的模块中默认导入。这并不影响代码的输出，仅为了类型检查。
+     "allowSyntheticDefaultImports": true,
+     // 用来指定编译时是否生成.map文件
+     "sourceMap": true,
+     // 允许编译JS
+     "allowJs": true,
+     /* 是否检测JS的语法 */
+     "checkJs": false,
+     // null类型检测,const teacher: string = null;会报错
+     "strictNullChecks": true,
+     // 对函数参数进行严格逆变比较
+     "strictFunctionTypes": true,
+     // 严格检查bind call apply
+     "strictBindCallApply": true,
+     // 此规则将验证构造函数内部初始化前后已定义的属性。
+     "strictPropertyInitialization": true,
+     // 不允许对同一个文件使用不一致格式的引用
+     "forceConsistentCasingInFileNames": true,
       "baseUrl": ".",
       "rootDir": ".",
       "paths": {
-        "@/*": ["./src/*"]
+        "@/*": ["./src/*"],
+        "@/package": [
+          "./package.json"
+        ],
+        "@/config": [
+          "./config/index.js"
+        ],
       },
       "jsx": "preserve",
       "jsxFactory": "React.createElement",
-      "allowJs": true,
       "typeRoots": [
         "node_modules/@types"
      ]
@@ -37,4 +57,3 @@
     ],
     "compileOnSave": false
   }
-  
