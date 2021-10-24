@@ -13,6 +13,12 @@ Taro 版本为 `3.3.8`。
 -   png|svg|jpg|jpeg|gif 引入支持
 -   git commit hooks, no 💩
 
+### 示例
+
+-   最新 Tags 自动打包：[点这里打开](https://funnyzak.github.io/taro-react-quick-start/)
+
+-   从这里下载最新 Releases：[下载](https://github.com/funnyzak/taro-react-quick-start/releases)
+
 ## 环境
 
 使用的 Node 的构建版本为 **v14.2.0**，为避免冲突，建议使用此版本。可以使用 **_nvm_** 管理 Node 版本。
