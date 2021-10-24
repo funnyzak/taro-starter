@@ -1,11 +1,40 @@
 module.exports = {
-    'extends': [
+    root: true,
+    env: {
+        browser: true,
+        es2017: true,
+        node: true,
+    },
+    extends: [
         // add more generic rulesets here, such as:
         // 'eslint:recommended',
-        'taro/react'
+        'taro/react',
     ],
-    "globals": {
-        "_": "readonly",
-        "wxsdk": 'writable'
-    }
+    plugins: ['react', 'react-hooks', 'import', 'jsx-a11y', 'html'],
+    globals: {
+        _: 'readonly',
+        wxsdk: 'writable',
+    },
+    rules: {
+        // 结尾分号
+        'semi': ['error', 'never'],
+        'func-names': 'off',
+        'react-hooks/rules-of-hooks': 'error',
+        'react-hooks/exhaustive-deps': 'warn',
+        'react/react-in-jsx-scope': 'off',
+        'import/no-unresolved': 'off',
+        'import/no-extraneous-dependencies': 'off',
+        'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
+        'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
+        'no-plusplus': 'off',
+        'camelcase': 'off',
+        'import/extensions': 'off',
+        'no-use-before-define': 'warn',
+        'react/jsx-filename-extension': [
+            'warn',
+            {
+                extensions: ['.js', '.jsx', '.ts', '.tsx'],
+            },
+        ],
+    },
 }
