@@ -1,3 +1,3 @@
-import useAsyncEffect from "./useAsyncEffect";
+import useAsyncEffect from './useAsyncEffect';
 
 export { useAsyncEffect };

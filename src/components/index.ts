@@ -1,5 +1,3 @@
-import SwiperImage from './SwiperImage'
+import SwiperImage from './SwiperImage';
 
-export {
-    SwiperImage
-}
+export { SwiperImage };

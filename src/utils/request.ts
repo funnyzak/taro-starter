@@ -1,19 +1,19 @@
 import Taro from '@tarojs/taro';
-import { baseURL, apiKey } from '@/config/app.config'
-import { HTTP_STATUS } from '@/config/constant'
+import { baseURL, apiKey } from '@/config/app.config';
+import { HTTP_STATUS } from '@/config/constant';
 import { toast, log } from './logger';
 
 export interface IRequestData {
   url: string;
   data?: Object;
   contentType?: string;
-  headers?: Array<{key:string, value:string}>;
-  taroOptions?:  any;
+  headers?: Array<{ key: string; value: string }>;
+  taroOptions?: any;
 }
 
 // 定义可使用的Request方法
 type RequestMethod =
-  'OPTIONS'
+  | 'OPTIONS'
   | 'GET'
   | 'HEAD'
   | 'POST'
@@ -22,25 +22,31 @@ type RequestMethod =
   | 'TRACE'
   | 'CONNECT';
 
-export const httpRequest = function (requestData: IRequestData, method: RequestMethod = 'GET') : Promise<any> {
+export const httpRequest = function (
+  requestData: IRequestData,
+  method: RequestMethod = 'GET',
+): Promise<any> {
   let contentType = requestData.contentType || 'application/json';
   let headers = {
     'Content-Type': contentType,
-    'X-SS-API-KEY': apiKey
+    'X-SS-API-KEY': apiKey,
   };
-  if(requestData.headers){
-    requestData.headers.forEach(v=>{
-      headers[v.key] = v.value
-    })
+  if (requestData.headers) {
+    requestData.headers.forEach((v) => {
+      headers[v.key] = v.value;
+    });
   }
-  
+
   return new Promise<any>((resolve, reject) => {
     Taro.request({
       url: baseURL + requestData.url,
       data: requestData.data || {},
       method: method,
       header: headers,
-      dataType: requestData.taroOptions && requestData.taroOptions.dataType ? requestData.taroOptions.dataType : 'json',
+      dataType:
+        requestData.taroOptions && requestData.taroOptions.dataType
+          ? requestData.taroOptions.dataType
+          : 'json',
       success(responseData: Taro.request.SuccessCallbackResult<any>) {
         if (responseData.statusCode === HTTP_STATUS.SUCCESS) {
           resolve(responseData.data);
@@ -64,7 +70,7 @@ export const httpRequest = function (requestData: IRequestData, method: RequestM
       },
       fail(e: Taro.General.CallbackResult) {
         // toast('API:', '请求接口出现问题', e.errMsg);
-        log(e, 'error')
+        log(e, 'error');
         reject(e);
       },
     });
@@ -102,5 +108,5 @@ export default {
   put(url: string, data?: object, contentType?: string) {
     let requestData = { url, data, contentType };
     return httpRequest(requestData, 'PUT');
-  }
+  },
 };

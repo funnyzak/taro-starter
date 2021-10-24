@@ -1,6 +1,6 @@
-import api from "./request";
-import { log, toast } from "./logger";
-import { toPage } from "./page";
+import api from './request';
+import { log, toast } from './logger';
+import { toPage } from './page';
 
 export { api, log, toast, toPage };
 
@@ -13,7 +13,7 @@ export { api, log, toast, toPage };
 export function parseTime(
   time: object | string | number,
   cFormat: string = '{y}-{m}-{d} {h}:{i}',
-  dValue = "无"
+  dValue = '无',
 ): string {
   if (!time) {
     return dValue;
@@ -22,15 +22,15 @@ export function parseTime(
     return '';
   }
 
-  const format = cFormat || "{y}-{m}-{d} {h}:{i}:{s}";
+  const format = cFormat || '{y}-{m}-{d} {h}:{i}:{s}';
   let date: Date;
-  if (typeof time === "object") {
+  if (typeof time === 'object') {
     date = time as Date;
   } else {
-    if (typeof time === "string" && /^[0-9]+$/.test(time)) {
+    if (typeof time === 'string' && /^[0-9]+$/.test(time)) {
       time = parseInt(time);
     }
-    if (typeof time === "number" && time.toString().length === 10) {
+    if (typeof time === 'number' && time.toString().length === 10) {
       time = time * 1000;
     }
     date = new Date(time);
@@ -47,11 +47,11 @@ export function parseTime(
   const time_str = format.replace(/{(y|m|d|h|i|s|a)+}/g, (result, key) => {
     let value = formatObj[key];
     // Note: getDay() returns 0 on Sunday
-    if (key === "a") {
-      return ["日", "一", "二", "三", "四", "五", "六"][value];
+    if (key === 'a') {
+      return ['日', '一', '二', '三', '四', '五', '六'][value];
     }
     if (result.length > 0 && value < 10) {
-      value = "0" + value;
+      value = '0' + value;
     }
     return value || 0;
   });
@@ -68,11 +68,16 @@ export function rangeArray(size: number) {
 
 export function queryString(obj?: Object) {
   if (!obj) {
-    return ''
+    return '';
   }
-  return '?' + Object.keys(obj).map(function (k) {
-    return encodeURIComponent(k) + '=' + encodeURIComponent(obj[k])
-  }).join('&')
+  return (
+    '?' +
+    Object.keys(obj)
+      .map(function (k) {
+        return encodeURIComponent(k) + '=' + encodeURIComponent(obj[k]);
+      })
+      .join('&')
+  );
 }
 
 /**
@@ -81,21 +86,29 @@ export function queryString(obj?: Object) {
  */
 export const parse2Https = (url: string) => {
   if (!url) return;
-  return url.startsWith("https") ? url : url.replace("http", "https");
-}
+  return url.startsWith('https') ? url : url.replace('http', 'https');
+};
 
+export const parseDate = function (date: string) {
+  var t = Date.parse(date);
+  if (typeof t === 'number') {
+    return new Date(Date.parse(date.replace(/-/g, '/')));
+  } else {
+    return new Date();
+  }
+};
 
-export const parseDate = function (date: string) {  
-  var t = Date.parse(date);  
-  if (typeof t === 'number') {  
-      return new Date(Date.parse(date.replace(/-/g, "/")));  
-  } else {  
-      return new Date();  
-  }  
-}
-
-export function parseWeekday(sDate){
-  var dt = typeof sDate === 'string' ?new Date(sDate.replace(/-/g, '/')) : sDate;
-  var a = ['星期日', '星期一','星期二','星期三','星期四','星期五','星期六'];
+export function parseWeekday(sDate) {
+  var dt =
+    typeof sDate === 'string' ? new Date(sDate.replace(/-/g, '/')) : sDate;
+  var a = [
+    '星期日',
+    '星期一',
+    '星期二',
+    '星期三',
+    '星期四',
+    '星期五',
+    '星期六',
+  ];
   return a[dt.getDay()];
 }

@@ -6,18 +6,18 @@
 
 Taro 版本为 `3.3.8`。
 
--   babel 支持
--   typescript 支持
--   react 支持
--   sass 支持
--   png|svg|jpg|jpeg|gif 引入支持
--   git commit hooks, no 💩
+- babel 支持
+- typescript 支持
+- react 支持
+- sass 支持
+- png|svg|jpg|jpeg|gif 引入支持
+- git commit hooks, no 💩
 
 ### 示例
 
--   最新 Tags 自动打包：[点这里打开](https://funnyzak.github.io/taro-react-quick-start/h5/)
+- 最新 Tags 自动打包：[点这里打开](https://funnyzak.github.io/taro-react-quick-start/h5/)
 
--   从这里下载最新 Releases：[下载](https://github.com/funnyzak/taro-react-quick-start/releases)
+- 从这里下载最新 Releases：[下载](https://github.com/funnyzak/taro-react-quick-start/releases)
 
 ## 环境
 
@@ -70,23 +70,23 @@ npm run build:h5
 
 ## 参考
 
--   [Babel Config](https://babel.docschina.org/docs/en/7.0.0/configuration/)
--   [EsLint](https://eslint.org/docs/user-guide/configuring/)
--   [eslintignore-file](https://eslint.org/docs/user-guide/configuring/ignoring-code#the-eslintignore-file)
--   [TSconfig](https://www.typescriptlang.org/tsconfig/)
--   [npmrc](https://docs.npmjs.com/cli/v7/configuring-npm/npmrc)
--   [gitignore](https://git-scm.com/docs/gitignore)
--   [webpack](https://webpack.docschina.org/guides/getting-started/)
--   [prettier](https://prettier.io/docs/en/index.html)
+- [Babel Config](https://babel.docschina.org/docs/en/7.0.0/configuration/)
+- [EsLint](https://eslint.org/docs/user-guide/configuring/)
+- [eslintignore-file](https://eslint.org/docs/user-guide/configuring/ignoring-code#the-eslintignore-file)
+- [TSconfig](https://www.typescriptlang.org/tsconfig/)
+- [npmrc](https://docs.npmjs.com/cli/v7/configuring-npm/npmrc)
+- [gitignore](https://git-scm.com/docs/gitignore)
+- [webpack](https://webpack.docschina.org/guides/getting-started/)
+- [prettier](https://prettier.io/docs/en/index.html)
 
 ## 建议
 
 对于在 Taro 中使用 TypeScript 有一些建议：
 
--   使用 tslint 作为编辑器内置的 linter
--   使用 eslint 命令行工具配合 `typescript-eslint-parser` 和 `eslint-config-taro`(见 [.eslintrc](./eslintrc)) 作为 `precommit` 或者 `prepush` 的钩子，在提交或 commit 或编译出现问题时检查代码是否符合 Taro 规范
--   不要在 TypeScript 使用 Redux 的 `connect` 装饰器，使用普通的函数写法,详情见: [#9951](https://github.com/DefinitelyTyped/DefinitelyTyped/issues/9951)
--   当你的项目不那么复杂时，可以不使用 Redux
+- 使用 tslint 作为编辑器内置的 linter
+- 使用 eslint 命令行工具配合 `typescript-eslint-parser` 和 `eslint-config-taro`(见 [.eslintrc](./eslintrc)) 作为 `precommit` 或者 `prepush` 的钩子，在提交或 commit 或编译出现问题时检查代码是否符合 Taro 规范
+- 不要在 TypeScript 使用 Redux 的 `connect` 装饰器，使用普通的函数写法,详情见: [#9951](https://github.com/DefinitelyTyped/DefinitelyTyped/issues/9951)
+- 当你的项目不那么复杂时，可以不使用 Redux
 
 ## License
 

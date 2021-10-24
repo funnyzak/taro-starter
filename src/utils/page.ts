@@ -1,7 +1,7 @@
-import Taro from "@tarojs/taro";
-import api from '@/api'
-import { log } from '@/utils'
-import { queryString } from '.'
+import Taro from '@tarojs/taro';
+import api from '@/api';
+import { log } from '@/utils';
+import { queryString } from '.';
 
 /**
  * 导航

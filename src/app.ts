@@ -1,6 +1,6 @@
-import 'default-passive-events'
+import 'default-passive-events';
 
-import './app.scss'
+import './app.scss';
 // import { isWechatBrower } from '@/utils'
 
 const App = (props: any) => {
@@ -11,4 +11,4 @@ const App = (props: any) => {
   return props.children;
 };
 
-export default App
+export default App;
