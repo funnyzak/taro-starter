@@ -10,7 +10,15 @@ module.exports = {
         // 'eslint:recommended',
         'taro/react',
     ],
-    plugins: ['react', 'react-hooks', 'import', 'jsx-a11y', 'html'],
+    plugins: [
+        'react',
+        '@typescript-eslint',
+        'react-hooks',
+        'import',
+        'jsx-a11y',
+        'html',
+    ],
+    parser: '@typescript-eslint/parser',
     globals: {
         _: 'readonly',
         wxsdk: 'writable',
@@ -29,7 +37,8 @@ module.exports = {
         'no-plusplus': 'off',
         'camelcase': 'off',
         'import/extensions': 'off',
-        'no-use-before-define': 'warn',
+        'no-use-before-define': 'off',
+        '@typescript-eslint/no-use-before-define': ['error'],
         'react/jsx-filename-extension': [
             'warn',
             {
