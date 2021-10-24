@@ -24,9 +24,14 @@ nvm install 14.2.0 && nvm use 14.2.0
 
 npm install
 
+# 开发启动
 npx taro build --type h5 --watch
 or
 npm run dev:h5
+
+# 打包
+npm run build:h5
+
 ```
 
 更多命令查看 **package.json** .
