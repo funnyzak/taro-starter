@@ -15,7 +15,7 @@ Taro 版本为 `3.3.8`。
 
 ### 示例
 
--   最新 Tags 自动打包：[点这里打开](https://funnyzak.github.io/taro-react-quick-start/)
+-   最新 Tags 自动打包：[点这里打开](https://funnyzak.github.io/taro-react-quick-start/h5/)
 
 -   从这里下载最新 Releases：[下载](https://github.com/funnyzak/taro-react-quick-start/releases)
 

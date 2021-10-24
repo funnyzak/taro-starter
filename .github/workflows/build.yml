@@ -29,13 +29,13 @@ jobs:
         working-directory: ./
         run: |
           npm install
-          npm run build
+          npm run build:h5
       - name: Deploy GitHubPage
         uses: JamesIves/github-pages-deploy-action@4.1.5
         with:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           branch: gh-pages # The branch the action should deploy to.
-          folder: dist/h5
+          folder: dist/
       - name: Archive Dist
         uses: papeloto/action-zip@v1
         with:
