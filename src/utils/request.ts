@@ -24,12 +24,12 @@ type RequestMethod =
 
 export const httpRequest = function (
   requestData: IRequestData,
-  method: RequestMethod = 'GET',
+  method: RequestMethod = 'GET'
 ): Promise<any> {
   let contentType = requestData.contentType || 'application/json';
   let headers = {
     'Content-Type': contentType,
-    'X-SS-API-KEY': apiKey,
+    'X-SS-API-KEY': apiKey
   };
   if (requestData.headers) {
     requestData.headers.forEach((v) => {
@@ -72,7 +72,7 @@ export const httpRequest = function (
         // toast('API:', '请求接口出现问题', e.errMsg);
         log(e, 'error');
         reject(e);
-      },
+      }
     });
   });
 };
@@ -108,5 +108,5 @@ export default {
   put(url: string, data?: object, contentType?: string) {
     let requestData = { url, data, contentType };
     return httpRequest(requestData, 'PUT');
-  },
+  }
 };

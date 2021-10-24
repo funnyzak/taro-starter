@@ -4,7 +4,7 @@ export default {
     backgroundTextStyle: 'light',
     navigationBarBackgroundColor: '#fff',
     navigationBarTitleText: 'WeChat',
-    navigationBarTextStyle: 'black',
+    navigationBarTextStyle: 'black'
   },
   tabBar: {
     color: '#999999',
@@ -16,16 +16,16 @@ export default {
         pagePath: 'pages/home/index',
         text: '首页',
         iconPath: './images/icon/home.png',
-        selectedIconPath: './images/icon/home_sel.png',
+        selectedIconPath: './images/icon/home_sel.png'
       },
       {
         pagePath: 'pages/date/index',
         text: '日程',
         iconPath: './images/icon/date.png',
-        selectedIconPath: './images/icon/date_sel.png',
-      },
+        selectedIconPath: './images/icon/date_sel.png'
+      }
     ],
     position: 'bottom',
-    custom: false,
-  },
+    custom: false
+  }
 };

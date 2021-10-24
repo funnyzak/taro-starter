@@ -23,7 +23,7 @@ const Index: React.FC<IProps> = ({ interval, vertical, preview, imgList }) => {
     if (preview) {
       Taro.previewImage({
         current: imgList[currentIndex],
-        urls: imgList,
+        urls: imgList
       });
     }
   };
@@ -69,7 +69,7 @@ const Index: React.FC<IProps> = ({ interval, vertical, preview, imgList }) => {
 Index.defaultProps = {
   interval: 5000,
   preview: true,
-  imgList: ['https://7n.niuqi.cc/example/images/e750x400.jpg'],
+  imgList: ['https://7n.niuqi.cc/example/images/e750x400.jpg']
 };
 
 export default Index;

@@ -3,7 +3,7 @@ import Taro from '@tarojs/taro';
 export const toast = (
   name: string,
   action: string,
-  info: string | object = '',
+  info: string | object = ''
 ) => {
   if (typeof info === 'object') {
     info = JSON.stringify(info);
@@ -11,7 +11,7 @@ export const toast = (
   Taro.showToast({
     title: `${name}${action}${info}`,
     icon: 'none',
-    duration: 3000,
+    duration: 3000
   });
 };
 

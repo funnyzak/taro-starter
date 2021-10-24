@@ -3,12 +3,12 @@ module.exports = {
   env: {
     browser: true,
     es2017: true,
-    node: true,
+    node: true
   },
   extends: [
     // add more generic rulesets here, such as:
     // 'eslint:recommended',
-    'taro/react',
+    'taro/react'
   ],
   plugins: [
     'react',
@@ -16,16 +16,16 @@ module.exports = {
     'react-hooks',
     'import',
     'jsx-a11y',
-    'html',
+    'html'
   ],
   parser: '@typescript-eslint/parser',
   globals: {
     _: 'readonly',
-    wxsdk: 'writable',
+    wxsdk: 'writable'
   },
   rules: {
     'semi': ['error', 'always'],
-    'comma-dangle': ['error', 'always-multiline'],
+    'comma-dangle': ['error', 'never'],
     'func-names': 'off',
     'import/no-unresolved': 'off',
     'import/no-extraneous-dependencies': 'off',
@@ -44,8 +44,8 @@ module.exports = {
     'react/jsx-filename-extension': [
       'warn',
       {
-        extensions: ['.js', '.jsx', '.ts', '.tsx'],
-      },
-    ],
-  },
+        extensions: ['.js', '.jsx', '.ts', '.tsx']
+      }
+    ]
+  }
 };
