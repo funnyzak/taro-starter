@@ -25,6 +25,7 @@
     },
     "scripts": {
         "prepare": "husky install",
+        "format": "npx prettier --write src/** && npx eslint --fix --cache src/**",
         "build:weapp": "taro build --type weapp",
         "build:swan": "taro build --type swan",
         "build:alipay": "taro build --type alipay",
