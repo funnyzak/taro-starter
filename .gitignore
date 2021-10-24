@@ -3,6 +3,7 @@
 dist/
 .temp/
 node_modules/
+.eslintcache
 
 # Log files
 npm-debug.log*
