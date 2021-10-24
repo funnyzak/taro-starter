@@ -89,10 +89,12 @@
     "lint-staged": {
         "*.{js,jsx,vue,ts,tsx}": [
             "prettier --write",
-            "eslint --fix --cache"
+            "eslint --fix --cache",
+            "git add"
         ],
         "*.{md,html,json,css,less,scss,sass}": [
-            "prettier --write"
+            "prettier --write",
+            "git add"
         ]
     }
 }
