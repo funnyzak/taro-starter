@@ -24,6 +24,7 @@
         "css": "sass"
     },
     "scripts": {
+      "prepare":"husky install",
         "build:weapp": "taro build --type weapp",
         "build:swan": "taro build --type swan",
         "build:alipay": "taro build --type alipay",
@@ -77,8 +78,21 @@
         "eslint-plugin-import": "^2.12.0",
         "eslint-plugin-react": "^7.8.2",
         "eslint-plugin-react-hooks": "^4.2.0",
+        "husky": "^7.0.4",
+        "lint-staged": "^11.2.3",
         "prettier": "2.4.1",
         "stylelint": "9.3.0",
         "typescript": "^4.1.0"
+    },
+    "lint-staged": {
+      "*.{js,jsx,vue,ts,tsx}": [
+        "prettier --write",
+        "eslint --fix --cache",
+        "git add"
+      ],
+      "*.{md,html,json,css,less,scss,sass}": [
+        "prettier --write",
+        "git add"
+      ]
     }
 }
