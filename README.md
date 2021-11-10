@@ -2,7 +2,7 @@
 
 基于 Typescript、 React 构建 Taro 应用的脚手架。
 
-Taro 版本为 `3.3.8`。
+Taro 版本为 `3.3.12`。
 
 - babel 支持
 - typescript 支持
