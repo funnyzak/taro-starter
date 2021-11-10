@@ -5,6 +5,9 @@ dist/
 node_modules/
 .eslintcache
 
+package-lock.json
+yarn.lock
+
 # Log files
 npm-debug.log*
 yarn-debug.log*
