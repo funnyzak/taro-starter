@@ -1634,6 +1634,18 @@
     webpack-format-messages "^2.0.5"
     webpack-sources "^1.4.3"
 
+"@tarojs/plugin-framework-react@3.5.7":
+  version "3.5.7"
+  resolved "https://registry.yarnpkg.com/@tarojs/plugin-framework-react/-/plugin-framework-react-3.5.7.tgz#d202b9d072f39a4a712f1cc4b689cd778ca17ace"
+  integrity sha512-VZzKK3uIBqExUv9YRQz3XBMd1QZyuzbU5fwpvVRZDltWWNUOgFv3+svTnWkTcCI4yb3pAEb4QJqkZzLy2Cmtpw==
+  dependencies:
+    "@tarojs/helper" "3.5.7"
+    "@tarojs/runtime" "3.5.7"
+    "@tarojs/service" "3.5.7"
+    "@tarojs/shared" "3.5.7"
+    acorn "^8.0.4"
+    acorn-walk "^8.0.0"
+
 "@tarojs/plugin-html@3.5.7":
   version "3.5.7"
   resolved "https://registry.yarnpkg.com/@tarojs/plugin-html/-/plugin-html-3.5.7.tgz#7082c64971dcfdb6b2211c9c57e7ce50160dc79f"
@@ -2365,7 +2377,7 @@ acorn@^7.1.1:
   resolved "https://registry.npmmirror.com/acorn/-/acorn-7.4.1.tgz#feaed255973d2e77555b83dbc08851a6c63520fa"
   integrity sha512-nQyp0o1/mNdbTO1PO6kHkwSrmgZ0MT/jCCpNiwbUjGoRN4dlBhqJtoQuCnEOKzgTVwg0ZWiCoQy6SxMebQVh8A==
 
-acorn@^8.2.4, acorn@^8.7.0, acorn@^8.8.0:
+acorn@^8.0.4, acorn@^8.2.4, acorn@^8.7.0, acorn@^8.8.0:
   version "8.8.0"
   resolved "https://registry.npmmirror.com/acorn/-/acorn-8.8.0.tgz#88c0187620435c7f6015803f5539dae05a9dbea8"
   integrity sha512-QOxyigPVrpZ2GXT+PFyZTl6TtOFc5egxHIP9IlQ+RbupQuX4RkT/Bee4/kQuC02Xkzg84JcT7oLYtDIQxp+v7w==
