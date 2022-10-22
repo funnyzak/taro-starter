@@ -70,7 +70,7 @@
 		"lodash": "4.17.21",
 		"react": "18.2.0",
 		"react-dom": "18.2.0",
-		"taro-ui": "3.0.0-alpha.10"
+		"taro-ui": "2.3.4"
 	},
 	"devDependencies": {
 		"@babel/core": "7.19.6",
