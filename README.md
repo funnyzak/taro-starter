@@ -1,61 +1,72 @@
-# taro-starter [![Release Version](https://img.shields.io/github/release/funnyzak/taro-starter.svg)](https://github.com/funnyzak/taro-starter/releases/latest) [![Latest Release Download](https://img.shields.io/github/downloads/funnyzak/taro-starter/latest/total.svg)](https://github.com/funnyzak/taro-starter/releases/latest) [![Total Download](https://img.shields.io/github/downloads/funnyzak/taro-starter/total.svg)](https://github.com/funnyzak/taro-starter/releases)
+# Taro-Starter
 
-基于 Typescript、 React 构建 Taro 应用的脚手架。
+[![action][ci-image]][ci-url] [![Release Date][rle-image]][rle-url] [![GitHub last commit][last-commit-image]][repository-url] [![tag][tag-image]][rle-url] [![license][license-image]][repository-url]
 
-Taro 版本为 `3.3.12`。
+ <!-- [![Sourcegraph][sg-image]][sg-url]  -->
+<!-- [![GitHub repo size][repo-size-image]][repository-url]
+ -->
+[ci-image]: https://github.com/funnyzak/taro-starter/actions/workflows/ci.yml/badge.svg
+[ci-url]: https://github.com/funnyzak/taro-starter/actions
+[license-image]: https://img.shields.io/github/license/funnyzak/taro-starter.svg?style=flat-square
+[repository-url]: https://github.com/funnyzak/taro-starter
+[repo-size-image]: https://img.shields.io/github/repo-size/funnyzak/taro-starter
+[commit-activity-image]: https://img.shields.io/github/commit-activity/m/funnyzak/taro-starter?style=flat-square
+[last-commit-image]: https://img.shields.io/github/last-commit/funnyzak/taro-starter?style=flat-square&lable=commit
+[rle-image]: https://img.shields.io/github/release-date/funnyzak/taro-starter.svg?label=release
+[rle-url]: https://github.com/funnyzak/taro-starter/releases/latest
+[sg-url]: https://sourcegraph.com/github.com/funnyzak/taro-starter
+[sg-image]: https://img.shields.io/badge/view%20on-Sourcegraph-brightgreen.svg?style=flat-square
+[tag-image]: https://img.shields.io/github/tag/funnyzak/taro-starter.svg
 
-- babel 支持
-- typescript 支持
-- react 支持
-- sass 支持
+基于 `Typescript、 React` 构建 `Taro` 应用脚手架。用于快速开始一个 `Taro` 项目开发。
+
+[在线预览](https://funnyzak.github.io/taro-starter/)。
+
+## Features
+
+- Babel 支持
+- Typescript 支持
+- React 支持
+- Sass 支持
 - png|svg|jpg|jpeg|gif 引入支持
 - git commit hooks, no 💩
 
-### 示例
+## Environment
 
-- Github Page：[点这里打开](https://funnyzak.github.io/taro-starter/h5/)
+`Node` 建议使用 `Node 16` 或更高版本。开发工具建议使用 [VS Code](https://code.visualstudio.com/)。
 
-- 最新 Releases：[点这里下载](https://github.com/funnyzak/taro-starter/releases)
-
-## 环境
-
-使用的 Node 的构建版本为 **v14.2.0**，为避免冲突，建议使用此版本。建议可以使用 **_nvm_** 管理 Node 版本。
-
-## 启动
+## Usage
 
 ```bash
-# 如有必要，安装node版本并切换node版本
-nvm install 14.2.0 && nvm use 14.2.0
 
-# 下载最新
+# clone the project
 git clone git@github.com:funnyzak/taro-starter.git -b master ./taro-react-app
 
-# 安装依赖
-cd ./taro-react-app && npm install
+# enter the project directory and install dependency
+cd ./taro-react-app && yarn
 
-# 开发启动
+# develop
 npx taro build --type h5 --watch
 # or
-npm run dev:h5
+yarn dev:h5
 ```
 
 然后，即可启动 H5 开发服务。
 
-## 打包
+## Build
 
 打包默认的输出目录为：**dist/[platform]**
 
 ```bash
 # 打包H5 输出到: dist/ht
-npm run build:h5
+yarn build:h5
 
 # 打包微信小程序, 输出到：dist/weapp
-npm run build:weapp
+yarn build:weapp
 ```
 
-更多脚本命令查看 **package.json** .
-
-## 目录
+More scripts, please see [package.json](./package.json)。
+## Structure
 
     ├── babel.config.js        // babel 配置
     ├── config                 // 开发和构建打包webpack配置
@@ -83,11 +94,13 @@ npm run build:weapp
     ├── tsconfig.json          // typescript 编译配置
     └── tslint.json            // tslint 配置
 
-## 版本升级
+## Q&A
+
+### 升级Taro
 
 ```bash
 # 升级 Taro CLI 工具:
-npm i @tarojs/cli@latest
+yarn add -D @tarojs/cli@latest
 
 # 更新项目中 Taro 相关的依赖:
 npx taro update project
@@ -96,7 +109,16 @@ npx taro update project
 rm -rf ./node_modules && npm install
 ```
 
-## 参考
+### Development Tips
+
+对于在 Taro 中使用 TypeScript 有一些建议：
+
+- 使用 tslint 作为编辑器内置的 linter
+- 使用 eslint 命令行工具配合 `typescript-eslint-parser` 和 `eslint-config-taro`(见 [.eslintrc](./eslintrc)) 作为 `precommit` 或者 `prepush` 的钩子，在提交或 commit 或编译出现问题时检查代码是否符合 Taro 规范
+- 不要在 TypeScript 使用 Redux 的 `connect` 装饰器，使用普通的函数写法,详情见: [#9951](https://github.com/DefinitelyTyped/DefinitelyTyped/issues/9951)
+- 当你的项目不那么复杂时，可以不使用 Redux
+
+## Reference
 
 - [Babel Config](https://babel.docschina.org/docs/en/7.0.0/configuration/)
 - [EsLint](https://eslint.org/docs/user-guide/configuring/)
@@ -107,22 +129,14 @@ rm -rf ./node_modules && npm install
 - [webpack](https://webpack.docschina.org/guides/getting-started/)
 - [prettier](https://prettier.io/docs/en/index.html)
 
-## 建议
+## Contribution
 
-对于在 Taro 中使用 TypeScript 有一些建议：
+如果你有任何的想法或者意见，欢迎提 Issue 或者 PR。
 
-- 使用 tslint 作为编辑器内置的 linter
-- 使用 eslint 命令行工具配合 `typescript-eslint-parser` 和 `eslint-config-taro`(见 [.eslintrc](./eslintrc)) 作为 `precommit` 或者 `prepush` 的钩子，在提交或 commit 或编译出现问题时检查代码是否符合 Taro 规范
-- 不要在 TypeScript 使用 Redux 的 `connect` 装饰器，使用普通的函数写法,详情见: [#9951](https://github.com/DefinitelyTyped/DefinitelyTyped/issues/9951)
-- 当你的项目不那么复杂时，可以不使用 Redux
-
-## Author
-
-| [![twitter/funnyzak](https://s.gravatar.com/avatar/c2437e240644b1317a4a356c6d6253ee?s=70)](https://twitter.com/funnyzak 'Follow @funnyzak on Twitter') |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------ |
-
-| [funnyzak](https://yycc.me/)
+<a href="https://github.com/funnyzak/taro-starter/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=funnyzak/taro-starter" />
+</a>
 
 ## License
 
-MIT License © 2021 [funnyzak](https://github.com/funnyzak)
+MIT License © 2022 [funnyzak](https://github.com/funnyzak)

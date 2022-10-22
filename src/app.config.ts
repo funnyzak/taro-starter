@@ -25,6 +25,7 @@ export default {
         selectedIconPath: './images/icon/date_sel.png'
       }
     ],
+    sitemapLocation: 'sitemap.json',
     position: 'bottom',
     custom: false
   }
