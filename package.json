@@ -76,7 +76,7 @@
 		"@babel/core": "7.19.6",
 		"@tarojs/mini-runner": "3.5.7",
 		"@tarojs/webpack-runner": "3.5.7",
-		"@types/react": "17.0.50",
+		"@types/react": "18.0.21",
 		"@types/webpack-env": "1.18.0",
 		"@typescript-eslint/eslint-plugin": "4.33.0",
 		"@typescript-eslint/parser": "4.33.0",
