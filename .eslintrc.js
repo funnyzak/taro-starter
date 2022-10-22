@@ -8,6 +8,7 @@ module.exports = {
   extends: [
     // add more generic rulesets here, such as:
     // 'eslint:recommended',
+    'prettier',
     'taro/react',
   ],
   plugins: [
@@ -29,7 +30,7 @@ module.exports = {
   },
   rules: {
     'semi': ['error', 'never'],
-    'comma-dangle': ['error', 'never'],
+    'comma-dangle': ['error', 'always-multiline'],
     'func-names': 'off',
     'import/no-unresolved': 'off',
     'import/no-extraneous-dependencies': 'off',

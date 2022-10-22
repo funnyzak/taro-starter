@@ -13,7 +13,7 @@ export { api, log, toast, toPage }
 export function parseTime(
   time: object | string | number,
   cFormat: string = '{y}-{m}-{d} {h}:{i}',
-  dValue = '无'
+  dValue = '无',
 ): string {
   if (!time) {
     return dValue
@@ -42,7 +42,7 @@ export function parseTime(
     h: date.getHours(),
     i: date.getMinutes(),
     s: date.getSeconds(),
-    a: date.getDay()
+    a: date.getDay(),
   }
   const time_str = format.replace(/{(y|m|d|h|i|s|a)+}/g, (result, key) => {
     let value = formatObj[key]

@@ -33,4 +33,4 @@ jobs:
         name: Lint
         run: |
           yarn
-          yarn lint:code
+          yarn lint:check

@@ -1,4 +1,3 @@
-import { siteId, channelId } from '@/config/app.config'
 import { IContentsParams } from '@/interfaces/api.params'
 import request, { httpRequest } from '@/utils/request'
 
@@ -14,8 +13,8 @@ function get(id: number, chnId: number = channelId) {
   return request.get(
     GET_CONTENT.replace('$id', id.toString()).replace(
       '$channel',
-      chnId.toString()
-    )
+      chnId.toString(),
+    ),
   )
 }
 
@@ -24,15 +23,15 @@ function digg(id: number, chnId: number = channelId) {
     {
       url: DIGG_CONTENTS.replace('$id', id.toString()).replace(
         '$channel',
-        chnId.toString()
+        chnId.toString(),
       ),
       data: {},
       headers: [{ key: 'hello', value: 'world' }],
       taroOptions: {
-        dataType: '其他'
-      }
+        dataType: '其他',
+      },
     },
-    'GET'
+    'GET',
   )
 }
 
@@ -43,5 +42,5 @@ function list(params: IContentsParams) {
 export default {
   get,
   digg,
-  list
+  list,
 }

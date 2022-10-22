@@ -13,6 +13,6 @@ export function toPage(path: string, o?: object) {
     url,
     success: () => {
       // Taro.hideLoading()
-    }
+    },
   })
 }

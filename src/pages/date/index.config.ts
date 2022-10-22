@@ -1,3 +1,3 @@
 export default {
-  navigationBarTitleText: '日程安排'
+  navigationBarTitleText: '日程安排',
 }

@@ -14,7 +14,7 @@ let requested_content_id: number = 0
 export const setCurrentMeeting = (content: IContentResponse): void => {
   Taro.setStorage({
     key: current_content_storage_key,
-    data: content
+    data: content,
   })
 }
 
@@ -25,10 +25,10 @@ export const currentContent = (): Promise<IContentResponse> => {
   const requestContent = (
     id: number,
     resolve,
-    defContent?: IContentResponse
+    defContent?: IContentResponse,
   ) => {
     Taro.showLoading({
-      title: '数据加载中..'
+      title: '数据加载中..',
     })
     api.Content.get(id)
       .then((res) => {
@@ -37,7 +37,7 @@ export const currentContent = (): Promise<IContentResponse> => {
         Taro.hideLoading()
         Taro.setStorage({
           key: current_content_storage_key,
-          data: contentResponse
+          data: contentResponse,
         })
         resolve(contentResponse)
         api.Content.digg(id) // 更新点击次数
@@ -67,7 +67,7 @@ export const currentContent = (): Promise<IContentResponse> => {
       },
       fail: () => {
         requestContent(_contentId, resolve)
-      }
+      },
     })
   })
 }
