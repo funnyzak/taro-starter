@@ -3,28 +3,32 @@ module.exports = {
   env: {
     browser: true,
     es2017: true,
-    node: true
+    node: true,
   },
   extends: [
     // add more generic rulesets here, such as:
     // 'eslint:recommended',
-    'taro/react'
+    'taro/react',
   ],
   plugins: [
+    'import',
     'react',
     '@typescript-eslint',
     'react-hooks',
-    'import',
     'jsx-a11y',
-    'html'
+    'html',
   ],
   parser: '@typescript-eslint/parser',
   globals: {
     _: 'readonly',
-    wxsdk: 'writable'
+    wxsdk: 'writable',
+    Component: 'readonly',
+    wx: 'readonly',
+    getCurrentPages: 'readonly',
+    Page: 'readonly',
   },
   rules: {
-    'semi': ['error', 'always'],
+    'semi': ['error', 'never'],
     'comma-dangle': ['error', 'never'],
     'func-names': 'off',
     'import/no-unresolved': 'off',
@@ -36,7 +40,7 @@ module.exports = {
     'import/extensions': 'off',
     'no-use-before-define': 'off',
     'no-var-requires': 'off',
-    'import/no-commonjs': 'warn',
+    'import/no-commonjs': 'off',
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'warn',
     'react/react-in-jsx-scope': 'off',
@@ -44,8 +48,8 @@ module.exports = {
     'react/jsx-filename-extension': [
       'warn',
       {
-        extensions: ['.js', '.jsx', '.ts', '.tsx']
-      }
-    ]
-  }
-};
+        extensions: ['.js', '.jsx', '.ts', '.tsx'],
+      },
+    ],
+  },
+}

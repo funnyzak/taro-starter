@@ -51,7 +51,7 @@ npx taro build --type h5 --watch
 yarn dev:h5
 ```
 
-然后，即可启动 H5 开发服务。
+More scripts, please see [package.json](./package.json)。
 
 ## Build
 
@@ -65,7 +65,6 @@ yarn build:h5
 yarn build:weapp
 ```
 
-More scripts, please see [package.json](./package.json)。
 ## Structure
 
     ├── babel.config.js        // babel 配置

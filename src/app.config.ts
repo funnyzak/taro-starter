@@ -29,4 +29,4 @@ export default {
     position: 'bottom',
     custom: false
   }
-};
+}

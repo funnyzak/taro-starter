@@ -1,6 +1,6 @@
-import 'default-passive-events';
+import 'default-passive-events'
 
-import './app.scss';
+import './app.scss'
 // import { isWechatBrower } from '@/utils'
 
 const App = (props: any) => {
@@ -8,7 +8,7 @@ const App = (props: any) => {
   // this.props.children 是将要会渲染的页面
   // console.log(navigator.userAgent.toLowerCase())
   // console.log(isWechatBrower)
-  return props.children;
-};
+  return props.children
+}
 
-export default App;
+export default App

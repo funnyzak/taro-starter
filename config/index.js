@@ -1,8 +1,9 @@
 // eslint-disable-next-line import/no-commonjs
-const path = require('path');
+const path = require('path')
+const { existsSync } = require('fs')
 
 const config = {
-  projectName: 'taro-meeting-app',
+  projectName: 'app',
   date: '2021-9-15',
   designWidth: 750,
   deviceRatio: {
@@ -15,7 +16,12 @@ const config = {
   plugins: ['@tarojs/plugin-html'],
   defineConstants: {},
   copy: {
-    patterns: [],
+    patterns: [
+      {
+        from: 'src/sitemap.json',
+        to: `dist/${process.env.TARO_ENV}/sitemap.json`
+      }
+    ],
     options: {}
   },
   framework: 'react',
@@ -82,11 +88,28 @@ const config = {
       } // 指定需要 copy 的目录
     ]
   }
-};
+}
 
 module.exports = function (merge) {
   if (process.env.NODE_ENV === 'development') {
-    return merge({}, config, require('./dev'));
+    return merge({}, config, require('./dev'))
   }
-  return merge({}, config, require('./prod'));
-};
+  return merge({}, config, require('./prod'))
+}
+
+module.exports = function (merge) {
+  // APP_ENV 必须前置在 NODE_ENV 逻辑前
+  if (
+    process.env.APP_ENV &&
+    process.env.APP_ENV !== '' &&
+    process.env.APP_ENV !== null &&
+    existsSync(path.resolve(__dirname, `./${process.env.APP_ENV}.js`))
+  ) {
+    return merge({}, config, require(`./${process.env.APP_ENV}.js`))
+  }
+  if (process.env.NODE_ENV === 'development') {
+    return merge({}, config, require('./dev'))
+  }
+
+  return merge({}, config, require('./prod'))
+}

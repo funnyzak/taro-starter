@@ -1,4 +1,4 @@
-import { staticBaseURL } from '@/config/app.config';
+import { staticBaseURL } from '@/config/app.config'
 
 /**
  * 转换静态地址
@@ -6,10 +6,10 @@ import { staticBaseURL } from '@/config/app.config';
  * @returns
  */
 export const parseStaticUrl = (url: string): string => {
-  if (!url || url === null || url === '') return '';
+  if (!url || url === null || url === '') return ''
   return url.startsWith('/')
     ? staticBaseURL + url
     : url.startsWith('@')
     ? staticBaseURL + url.substring(1)
-    : url;
-};
+    : url
+}
