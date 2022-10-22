@@ -1,4 +1,4 @@
-# Taro-React-Quick-Start [![Release Version](https://img.shields.io/github/release/funnyzak/taro-react-quick-start.svg)](https://github.com/funnyzak/taro-react-quick-start/releases/latest) [![Latest Release Download](https://img.shields.io/github/downloads/funnyzak/taro-react-quick-start/latest/total.svg)](https://github.com/funnyzak/taro-react-quick-start/releases/latest) [![Total Download](https://img.shields.io/github/downloads/funnyzak/taro-react-quick-start/total.svg)](https://github.com/funnyzak/taro-react-quick-start/releases)
+# taro-starter [![Release Version](https://img.shields.io/github/release/funnyzak/taro-starter.svg)](https://github.com/funnyzak/taro-starter/releases/latest) [![Latest Release Download](https://img.shields.io/github/downloads/funnyzak/taro-starter/latest/total.svg)](https://github.com/funnyzak/taro-starter/releases/latest) [![Total Download](https://img.shields.io/github/downloads/funnyzak/taro-starter/total.svg)](https://github.com/funnyzak/taro-starter/releases)
 
 基于 Typescript、 React 构建 Taro 应用的脚手架。
 
@@ -13,9 +13,9 @@ Taro 版本为 `3.3.12`。
 
 ### 示例
 
-- Github Page：[点这里打开](https://funnyzak.github.io/taro-react-quick-start/h5/)
+- Github Page：[点这里打开](https://funnyzak.github.io/taro-starter/h5/)
 
-- 最新 Releases：[点这里下载](https://github.com/funnyzak/taro-react-quick-start/releases)
+- 最新 Releases：[点这里下载](https://github.com/funnyzak/taro-starter/releases)
 
 ## 环境
 
@@ -28,7 +28,7 @@ Taro 版本为 `3.3.12`。
 nvm install 14.2.0 && nvm use 14.2.0
 
 # 下载最新
-git clone git@github.com:funnyzak/taro-react-quick-start.git -b master ./taro-react-app
+git clone git@github.com:funnyzak/taro-starter.git -b master ./taro-react-app
 
 # 安装依赖
 cd ./taro-react-app && npm install

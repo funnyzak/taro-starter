@@ -1,11 +1,11 @@
 {
-  "name": "taro-react-quick-start",
+  "name": "taro-starter",
   "version": "1.0.0",
   "private": true,
   "description": "taro react quick start",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/funnyzak/taro-react-quick-start.git"
+    "url": "git+https://github.com/funnyzak/taro-starter.git"
   },
   "keywords": [
     "react",
@@ -15,9 +15,9 @@
   "author": "funnyzak <silenceace@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/funnyzak/taro-react-quick-start/issues"
+    "url": "https://github.com/funnyzak/taro-starter/issues"
   },
-  "homepage": "https://github.com/funnyzak/taro-react-quick-start#readme",
+  "homepage": "https://github.com/funnyzak/taro-starter#readme",
   "templateInfo": {
     "name": "taro-ui",
     "typescript": true,

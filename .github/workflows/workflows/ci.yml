@@ -1,0 +1,122 @@
+name: CI
+on:
+  push:
+    tags:
+      - '*'
+  workflow_dispatch:
+
+env:
+  DIST_ARCHIVE_PREFIX_NAME: ${{ github.event.repository.name }}
+  DIST_PLATFORM_NAMES: 'weapp'
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [16.x]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - name: Clean
+        run: |
+          mkdir -p ./build
+      - name: Get the version
+        id: get_version
+        run: |
+          # Get the version from package.json
+          echo ::set-output name=PACKAGE_VERSION_NAME::$(node -p "require('./package.json').version")
+          # Get the name from package.json
+          echo ::set-output name=PACKAGE_NAME::$(node -p "require('./package.json').name")
+          # current push sha
+          echo ::set-output name=COMMIT_ID::$(echo ${{ github.sha }} | cut -c1-7)
+          # current push tag
+          echo ::set-output name=VERSION::$(echo $GITHUB_REF | cut -d / -f 3)
+          # latest tag
+          echo ::set-output name=TAG_NAME::$(git describe --tags --abbrev=0)
+          # set current timestamp
+          echo ::set-output name=TIMESTAMP::$(date +%s)
+          # set current time and format
+          echo ::set-output name=BUILD_TIME::$(date "+%Y-%m-%d-%H-%M")
+      - name: Set source zip name
+        id: set_source_zip_name
+        run: |
+          echo ::set-output name=SOURCE_ZIP_NAME::$(echo "${{ env.DIST_ARCHIVE_PREFIX_NAME }}-${{ steps.get_version.outputs.PACKAGE_VERSION_NAME }}-${{steps.get_version.outputs.TIMESTAMP}}-${{ steps.get_version.outputs.COMMIT_ID }}.zip")
+      - name: Archive source code
+        uses: papeloto/action-zip@v1
+        with:
+          files: |
+            ./
+          recursive: false
+          dest: ./build/${{ steps.set_source_zip_name.outputs.SOURCE_ZIP_NAME }}
+      - name: Build changelog
+        id: build_changelog
+        uses: mikepenz/release-changelog-builder-action@v3
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          configuration: '.github/config/changelog_configuration.json'
+          ignorePreReleases: 'false'
+      - name: Use Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: Restore yarn cache
+        uses: actions/cache@v3
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+      - name: Install dependencies
+        run: |
+          yarn
+      - name: Buid for ${{ env.DIST_PLATFORM_NAMES }}
+        run: |
+          for platform in ${{ env.DIST_PLATFORM_NAMES }}; do
+            # build
+            yarn build:$platform
+            # set dist zip name
+          done
+      - name: Archive dist code
+        uses: papeloto/action-zip@v1
+        with:
+          files: |
+            ./dist
+          recursive: false
+          dest: ./build/${{ env.DIST_ARCHIVE_PREFIX_NAME }}-dist-${{ steps.get_version.outputs.PACKAGE_VERSION_NAME }}-${{steps.get_version.outputs.TIMESTAMP}}-${{ steps.get_version.outputs.COMMIT_ID }}.zip
+      - name: Release
+        uses: softprops/action-gh-release@v1
+        with:
+          name: ${{ steps.get_version.outputs.PACKAGE_VERSION_NAME }}
+          tag_name: ${{ steps.get_version.outputs.TAG_NAME }}
+          body: ${{steps.build_changelog.outputs.changelog}}
+          files: |
+            ./build/**
+        env:
+          GITHUB_TOKEN: ${{ secrets.github_token }}
+
+  push-release-message:
+    name: Push release message
+    runs-on: ubuntu-latest
+    needs: [build]
+    steps:
+      - name: Push message
+        uses: funnyzak/pushoo-action@main
+        with:
+          platforms: ifttt,wecombot,bark
+          tokens: ${{ secrets.PUSH_TOKEN }}
+          content: |
+            # ${{ github.event.repository.name }} Released
+            ## trigger: ${{ github.event_name }} at ${{ github.event.head_commit.timestamp }}
+            ## commit message: ${{ github.event.head_commit.message }}
+            ## commit url: ${{ github.event.head_commit.url }}
+            ## commit author: ${{ github.event.head_commit.author.name }}
+            ## commit email: ${{ github.event.head_commit.author.email }}
+            ## commit id: ${{ github.event.head_commit.id }}
+          title: |
+            ${{ github.repository }} ${{ github.event_name }} Message
+          options: '{"bark": { "url": "https://github.com/${{github.repository}}" }}'
+          debug: false
