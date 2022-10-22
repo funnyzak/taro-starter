@@ -1,115 +1,115 @@
 {
-  "name": "taro-starter",
-  "version": "0.2.0",
-  "private": true,
-  "description": "taro react quick start",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/funnyzak/taro-starter.git"
-  },
-  "keywords": [
-    "react",
-    "typescript",
-    "webpack"
-  ],
-  "author": "funnyzak <silenceace@gmail.com>",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/funnyzak/taro-starter/issues"
-  },
-  "homepage": "https://github.com/funnyzak/taro-starter#readme",
-  "templateInfo": {
-    "name": "taro-ui",
-    "typescript": true,
-    "css": "sass"
-  },
-  "scripts": {
-    "prepare": "husky install",
-    "clean": "npx rimraf node_modules",
-    "clean:cache": "npx rimraf node_modules/.cache",
-    "eslint:check": "eslint --max-warnings 100 ./ --ext .js,.jsx,.ts,.tsx",
-    "eslint:fix": "eslint --fix ./ --ext .js,.jsx,.ts,.tsx",
-    "style:check": "prettier --check './***.{ts,js,jsx,tsx}'",
-    "style:fix": "prettier --write './**/*.{ts,js,jsx,tsx}'",
-    "lint:check": "yarn eslint:check && yarn style:check",
-    "lint:fix": "yarn eslint:fix && yarn style:fix",
-    "build:weapp": "taro build --type weapp",
-    "build:swan": "taro build --type swan",
-    "build:alipay": "taro build --type alipay",
-    "build:tt": "taro build --type tt",
-    "build:h5": "taro build --type h5",
-    "build:rn": "taro build --type rn",
-    "build:qq": "taro build --type qq",
-    "build:jd": "taro build --type jd",
-    "build:quickapp": "taro build --type quickapp",
-    "dev:weapp": "npm run build:weapp -- --watch",
-    "dev:swan": "npm run build:swan -- --watch",
-    "dev:alipay": "npm run build:alipay -- --watch",
-    "dev:tt": "npm run build:tt -- --watch",
-    "dev:h5": "npm run build:h5 -- --watch",
-    "dev:rn": "npm run build:rn -- --watch",
-    "dev:qq": "npm run build:qq -- --watch",
-    "dev:jd": "npm run build:jd -- --watch",
-    "dev:quickapp": "npm run build:quickapp -- --watch"
-  },
-  "browserslist": [
-    "last 3 versions",
-    "Android >= 4.1",
-    "ios >= 8"
-  ],
-  "dependencies": {
-    "@babel/runtime": "7.19.4",
-    "@tarojs/cli": "3.5.7",
-    "@tarojs/components": "3.5.7",
-    "@tarojs/plugin-html": "3.5.7",
-    "@tarojs/react": "3.5.7",
-    "@tarojs/runtime": "3.5.7",
-    "@tarojs/taro": "3.5.7",
-    "crypto-js": "4.1.1",
-    "default-passive-events": "2.0.0",
-    "lodash": "4.17.21",
-    "react": "17.0.2",
-    "react-dom": "17.0.2",
-    "taro-ui": "3.0.0-alpha.10"
-  },
-  "devDependencies": {
-    "@babel/core": "7.19.6",
-    "@tarojs/mini-runner": "3.5.7",
-    "@tarojs/webpack-runner": "3.5.7",
-    "@types/react": "17.0.50",
-    "@types/webpack-env": "1.18.0",
-    "@typescript-eslint/eslint-plugin": "4.33.0",
-    "@typescript-eslint/parser": "4.33.0",
-    "babel-preset-taro": "3.5.7",
-    "eslint": "6.8.0",
-    "eslint-config-taro": "3.5.7",
-    "eslint-plugin-html": "6.2.0",
-    "eslint-plugin-import": "2.26.0",
-    "eslint-plugin-jsx-a11y": "6.6.1",
-    "eslint-plugin-react": "7.31.10",
-    "eslint-plugin-react-hooks": "4.6.0",
-    "eslint-config-prettier": "8.5.0",
-    "eslint-define-config": "1.7.0",
-    "eslint-plugin-prettier": "4.2.1",
-    "husky": "7.0.4",
-    "lint-staged": "11.2.6",
-    "prettier": "2.4.1",
-    "rimraf": "3.0.2",
-    "stylelint": "9.3.0",
-    "typescript": "4.8.4"
-  },
-  "engines": {
-    "node": ">=16.0.0"
-  },
-  "lint-staged": {
-    "*.{js,jsx,vue,ts,tsx}": [
-      "prettier --write",
-      "eslint --fix --cache",
-      "git add"
-    ],
-    "*.{md,html,json,css,less,scss,sass}": [
-      "prettier --write",
-      "git add"
-    ]
-  }
+	"name": "taro-starter",
+	"version": "0.2.0",
+	"private": true,
+	"description": "taro react quick start",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/funnyzak/taro-starter.git"
+	},
+	"keywords": [
+		"react",
+		"typescript",
+		"webpack"
+	],
+	"author": "funnyzak <silenceace@gmail.com>",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/funnyzak/taro-starter/issues"
+	},
+	"homepage": "https://github.com/funnyzak/taro-starter#readme",
+	"templateInfo": {
+		"name": "taro-ui",
+		"typescript": true,
+		"css": "sass"
+	},
+	"scripts": {
+		"prepare": "husky install",
+		"clean": "npx rimraf node_modules",
+		"clean:cache": "npx rimraf node_modules/.cache",
+		"eslint:check": "eslint --max-warnings 100 ./ --ext .js,.jsx,.ts,.tsx",
+		"eslint:fix": "eslint --fix ./ --ext .js,.jsx,.ts,.tsx",
+		"style:check": "prettier --check './***.{ts,js,jsx,tsx}'",
+		"style:fix": "prettier --write './**/*.{ts,js,jsx,tsx}'",
+		"lint:check": "yarn eslint:check && yarn style:check",
+		"lint:fix": "yarn eslint:fix && yarn style:fix",
+		"build:weapp": "taro build --type weapp",
+		"build:swan": "taro build --type swan",
+		"build:alipay": "taro build --type alipay",
+		"build:tt": "taro build --type tt",
+		"build:h5": "taro build --type h5",
+		"build:rn": "taro build --type rn",
+		"build:qq": "taro build --type qq",
+		"build:jd": "taro build --type jd",
+		"build:quickapp": "taro build --type quickapp",
+		"dev:weapp": "npm run build:weapp -- --watch",
+		"dev:swan": "npm run build:swan -- --watch",
+		"dev:alipay": "npm run build:alipay -- --watch",
+		"dev:tt": "npm run build:tt -- --watch",
+		"dev:h5": "npm run build:h5 -- --watch",
+		"dev:rn": "npm run build:rn -- --watch",
+		"dev:qq": "npm run build:qq -- --watch",
+		"dev:jd": "npm run build:jd -- --watch",
+		"dev:quickapp": "npm run build:quickapp -- --watch"
+	},
+	"browserslist": [
+		"last 3 versions",
+		"Android >= 4.1",
+		"ios >= 8"
+	],
+	"dependencies": {
+		"@babel/runtime": "7.19.4",
+		"@tarojs/cli": "3.5.7",
+		"@tarojs/components": "3.5.7",
+		"@tarojs/plugin-html": "3.5.7",
+		"@tarojs/react": "3.5.7",
+		"@tarojs/runtime": "3.5.7",
+		"@tarojs/taro": "3.5.7",
+		"crypto-js": "4.1.1",
+		"default-passive-events": "2.0.0",
+		"lodash": "4.17.21",
+		"react": "17.0.2",
+		"react-dom": "17.0.2",
+		"taro-ui": "3.0.0-alpha.10"
+	},
+	"devDependencies": {
+		"@babel/core": "7.19.6",
+		"@tarojs/mini-runner": "3.5.7",
+		"@tarojs/webpack-runner": "3.5.7",
+		"@types/react": "17.0.50",
+		"@types/webpack-env": "1.18.0",
+		"@typescript-eslint/eslint-plugin": "4.33.0",
+		"@typescript-eslint/parser": "4.33.0",
+		"babel-preset-taro": "3.5.7",
+		"eslint": "6.8.0",
+		"eslint-config-taro": "3.5.7",
+		"eslint-plugin-html": "6.2.0",
+		"eslint-plugin-import": "2.26.0",
+		"eslint-plugin-jsx-a11y": "6.6.1",
+		"eslint-plugin-react": "7.31.10",
+		"eslint-plugin-react-hooks": "4.6.0",
+		"eslint-config-prettier": "8.5.0",
+		"eslint-define-config": "1.7.0",
+		"eslint-plugin-prettier": "4.2.1",
+		"husky": "7.0.4",
+		"lint-staged": "11.2.6",
+		"prettier": "2.4.1",
+		"rimraf": "3.0.2",
+		"stylelint": "9.3.0",
+		"typescript": "4.8.4"
+	},
+	"engines": {
+		"node": ">=16.0.0"
+	},
+	"lint-staged": {
+		"*.{js,jsx,vue,ts,tsx}": [
+			"prettier --write",
+			"eslint --fix --cache",
+			"git add"
+		],
+		"*.{md,html,json,css,less,scss,sass}": [
+			"prettier --write",
+			"git add"
+		]
+	}
 }
