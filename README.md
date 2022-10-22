@@ -95,6 +95,13 @@ yarn build:weapp
 
 ## Q&A
 
+### 如何打包或开发指定应用配置？
+
+1. 在 `config/` 目录下，复制 `app_sample.js` 文件，重命名为 `app_youname.js`，并修改配置；
+2. 修改配置文件的环境变量配置；
+3. 使用 `npx cross-env APP_ENV=app_youname yarn dev:h5` 命令启动开发；
+4. 使用 `npx cross-env APP_ENV=app_youname yarn build:h5` 命令进行打包（打包输出目录为 `dist/app/yourname`）。
+
 ### 升级Taro
 
 ```bash
@@ -108,9 +115,7 @@ npx taro update project
 rm -rf ./node_modules && npm install
 ```
 
-### Development Tips
-
-对于在 Taro 中使用 TypeScript 有一些建议：
+### TypeScript 建议
 
 - 使用 tslint 作为编辑器内置的 linter
 - 使用 eslint 命令行工具配合 `typescript-eslint-parser` 和 `eslint-config-taro`(见 [.eslintrc](./eslintrc)) 作为 `precommit` 或者 `prepush` 的钩子，在提交或 commit 或编译出现问题时检查代码是否符合 Taro 规范
