@@ -25,7 +25,13 @@
   },
   "scripts": {
     "prepare": "husky install",
-    "format": "npx prettier --write src/** && npx eslint --fix --cache src/**",
+    "clean": "npx rimraf node_modules",
+    "clean:cache": "npx rimraf node_modules/.cache",
+    "lint:code": "eslint --max-warnings 100 src --ext .js,.jsx,.ts,.tsx",
+    "lint:style": "prettier --check 'src/**/*.{ts,js,jsx,tsx}'",
+    "lint:style:fix": "prettier --write 'src/**/*.{ts,js,jsx,tsx}'",
+    "lint": "yarn lint:code && yarn lint:style",
+    "lint:fix": "yarn lint:style:fix && yarn lint:code --fix",
     "build:weapp": "taro build --type weapp",
     "build:swan": "taro build --type swan",
     "build:alipay": "taro build --type alipay",
@@ -84,6 +90,7 @@
     "husky": "^7.0.4",
     "lint-staged": "^11.2.3",
     "prettier": "2.4.1",
+    "rimraf": "^3.0.2",
     "stylelint": "9.3.0",
     "typescript": "^4.1.0"
   },
