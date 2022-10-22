@@ -85,7 +85,7 @@ jobs:
         with:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           branch: gh-pages
-          folder: dist
+          folder: dist/h5
       - name: Archive dist code
         uses: papeloto/action-zip@v1
         with:
