@@ -1,9 +1,9 @@
 import Taro from '@tarojs/taro'
-import { BASE_URL, apiKey } from '@/config/app.config'
+import { BASE_URL } from '@/config/app.config'
 import { HTTP_STATUS } from '@/config/constant'
 import { toast, log } from './logger'
 
-export interface IRequestData {
+export interface RequestInfo {
   url: string
   data?: Object
   contentType?: string
@@ -23,13 +23,12 @@ type RequestMethod =
   | 'CONNECT'
 
 export const httpRequest = function (
-  requestData: IRequestData,
+  requestData: RequestInfo,
   method: RequestMethod = 'GET',
 ): Promise<any> {
   let contentType = requestData.contentType || 'application/json'
   let headers = {
     'Content-Type': contentType,
-    'X-SS-API-KEY': apiKey,
   }
   if (requestData.headers) {
     requestData.headers.forEach((v) => {
@@ -68,7 +67,7 @@ export const httpRequest = function (
           reject(responseData)
         }
       },
-      fail(e: Taro.General.CallbackResult) {
+      fail(e: any) {
         // toast('API:', '请求接口出现问题', e.errMsg);
         log(e, 'error')
         reject(e)

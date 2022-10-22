@@ -6,7 +6,7 @@ import homeIcon from '@/images/icon/home.png'
 import './index.scss'
 
 const Index: React.FC = () => {
-  const [detail, setDetail] = useState<String>(APP_NAME)
+  const [detail, setDetail] = useState(APP_NAME)
   useReady(async () => {
     setDetail('这是首页')
   })

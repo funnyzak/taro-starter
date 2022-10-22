@@ -1,5 +1,3 @@
-import Content from './content'
-
 export default {
-  Content,
+  // api 定义
 }

@@ -86,7 +86,6 @@ yarn build:weapp
     │   ├── types              // 定义声明
     │   ├── images             // 图片
     │   ├── index.html         // 打包html模板
-    │   ├── interfaces         // 接口定义
     │   ├── pages              // 页面
     │   ├── styles             // 公共样式
     │   └── utils              // 工具类
