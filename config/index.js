@@ -50,6 +50,9 @@ const config = {
     publicPath: '/',
     staticDirectory: 'static',
     esnextModules: ['taro-ui'],
+    devServer: {
+      hot: false,
+    },
     output: {
       filename: 'js/[name].[hash:8].js',
       chunkFilename: 'js/[name].[chunkhash:8].js',
