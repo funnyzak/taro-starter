@@ -45,10 +45,35 @@ git clone git@github.com:funnyzak/taro-starter.git -b master ./taro-react-app
 # enter the project directory and install dependency
 cd ./taro-react-app && yarn
 
-# develop
-npx taro build --type h5 --watch
-# or
+# develop h5
 yarn dev:h5
+
+# develop weapp
+yarn dev:weapp
+
+# build h5
+yarn build:h5
+
+# eslint
+yarn eslint:check
+
+# eslint:fix
+yarn eslint:fix
+
+# prettier check
+yarn prettier:check
+
+# prettier fix
+yarn prettier:fix
+
+# eslint and prettier check
+yarn lint:check
+
+# eslint and prettier fix
+yarn lint:fix
+
+# clean node_modules
+yarn clean
 ```
 
 More scripts, please see [package.json](./package.json)。
@@ -123,9 +148,9 @@ rm -rf ./node_modules && npm install
 
 ## Reference
 
-- [Babel Config](https://babel.docschina.org/docs/en/7.0.0/configuration/)
+- [Babel](https://babel.docschina.org/docs/en/7.0.0/configuration/)
 - [EsLint](https://eslint.org/docs/user-guide/configuring/)
-- [eslintignore-file](https://eslint.org/docs/user-guide/configuring/ignoring-code#the-eslintignore-file)
+- [Eslintignore](https://eslint.org/docs/user-guide/configuring/ignoring-code#the-eslintignore-file)
 - [TSconfig](https://www.typescriptlang.org/tsconfig/)
 - [npmrc](https://docs.npmjs.com/cli/v7/configuring-npm/npmrc)
 - [gitignore](https://git-scm.com/docs/gitignore)
