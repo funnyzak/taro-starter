@@ -1,5 +1,5 @@
-import Taro from '@tarojs/taro'
-import { queryString } from '.'
+import Taro from '@tarojs/taro';
+import { queryString } from '.';
 
 /**
  * 导航
@@ -8,11 +8,11 @@ import { queryString } from '.'
  */
 export function toPage(path: string, o?: object) {
   // Taro.showLoading()
-  const url = `/pages/${path}/index${queryString(o)}`
+  const url = `/pages/${path}/index${queryString(o)}`;
   Taro.navigateTo({
     url,
     success: () => {
       // Taro.hideLoading()
-    },
-  })
+    }
+  });
 }

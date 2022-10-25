@@ -7,8 +7,8 @@ module.exports = {
       {
         framework: 'react',
         ts: true,
-        hot:false,
-      },
-    ],
-  ],
-}
+        hot: false
+      }
+    ]
+  ]
+};

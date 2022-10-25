@@ -1,26 +1,19 @@
-const { defineConfig } = require('eslint-define-config')
+const { defineConfig } = require('eslint-define-config');
 
 module.exports = defineConfig({
   root: true,
   env: {
     browser: true,
     es2017: true,
-    node: true,
+    node: true
   },
   extends: [
     // add more generic rulesets here, such as:
     // 'eslint:recommended',
-    'prettier',
     'taro/react',
+    'prettier'
   ],
-  plugins: [
-    'import',
-    'react',
-    '@typescript-eslint',
-    'react-hooks',
-    'jsx-a11y',
-    'html',
-  ],
+  plugins: ['import', 'react', '@typescript-eslint', 'react-hooks', 'jsx-a11y', 'html'],
   parser: '@typescript-eslint/parser',
   globals: {
     _: 'readonly',
@@ -28,11 +21,12 @@ module.exports = defineConfig({
     Component: 'readonly',
     wx: 'readonly',
     getCurrentPages: 'readonly',
-    Page: 'readonly',
+    Page: 'readonly'
   },
   rules: {
-    'semi': ['error', 'never'],
-    'comma-dangle': ['error', 'always-multiline'],
+    'semi': ['error', 'always'],
+    'comma-dangle': ['error', 'never'],
+    'jsx-quotes': ['error', 'prefer-double'],
     'func-names': 'off',
     'import/no-unresolved': 'off',
     'import/no-extraneous-dependencies': 'off',
@@ -51,8 +45,8 @@ module.exports = defineConfig({
     'react/jsx-filename-extension': [
       'warn',
       {
-        extensions: ['.js', '.jsx', '.ts', '.tsx'],
-      },
-    ],
-  },
-})
+        extensions: ['.js', '.jsx', '.ts', '.tsx']
+      }
+    ]
+  }
+});
