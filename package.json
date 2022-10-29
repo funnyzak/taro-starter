@@ -86,7 +86,7 @@
 		"eslint": "8.26.0",
 		"eslint-config-prettier": "8.5.0",
 		"eslint-config-taro": "3.5.7",
-		"eslint-define-config": "1.8.0",
+		"eslint-define-config": "1.10.0",
 		"eslint-plugin-html": "7.1.0",
 		"eslint-plugin-import": "2.26.0",
 		"eslint-plugin-jsx-a11y": "6.6.1",
