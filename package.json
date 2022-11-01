@@ -59,7 +59,7 @@
 		"ios >= 8"
 	],
 	"dependencies": {
-		"@babel/runtime": "7.20.0",
+		"@babel/runtime": "7.20.1",
 		"@tarojs/cli": "3.5.7",
 		"@tarojs/components": "3.5.7",
 		"@tarojs/plugin-html": "3.5.7",
