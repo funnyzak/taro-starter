@@ -33,7 +33,7 @@
 
 ## Environment
 
-`Node` 建议使用 `Node 16` 或更高版本。开发工具建议使用 [VS Code](https://code.visualstudio.com/)。
+`Node` 建议使用 `Node 14+` 或更高版本。开发工具建议使用 [VS Code](https://code.visualstudio.com/)。
 
 ## Usage
 
