@@ -1670,6 +1670,20 @@
     swiper "6.8.0"
     weui "^1.1.2"
 
+"@tarojs/components@3.5.8":
+  version "3.5.8"
+  resolved "https://registry.yarnpkg.com/@tarojs/components/-/components-3.5.8.tgz#3c4e0c58b8efa10f39373c306958a0fd2eb84c22"
+  integrity sha512-4MAYQEPlWVdKamHdGwIsUds7Edh6PyLiHVw/gsXF+n5wjkF6iZslAfNWzNTzHPc0C83ToXdI+gwqJYKUQ6RlPw==
+  dependencies:
+    "@tarojs/router" "3.5.8"
+    "@tarojs/taro" "3.5.8"
+    classnames "^2.2.5"
+    hls.js "^1.1.5"
+    intersection-observer "^0.7.0"
+    resolve-pathname "^3.0.0"
+    swiper "6.8.0"
+    weui "^1.1.2"
+
 "@tarojs/helper@3.5.7":
   version "3.5.7"
   resolved "https://registry.npmmirror.com/@tarojs/helper/-/helper-3.5.7.tgz#efa8bd62eef93a25f5504e5c16be2d54127f8534"
@@ -1881,6 +1895,19 @@
   dependencies:
     "@tarojs/runtime" "3.5.7"
     "@tarojs/taro" "3.5.7"
+    dingtalk-jsapi "~2.15.2"
+    history "^5.1.0"
+    mobile-detect "^1.4.2"
+    query-string "^7.1.1"
+    universal-router "^8.3.0"
+
+"@tarojs/router@3.5.8":
+  version "3.5.8"
+  resolved "https://registry.yarnpkg.com/@tarojs/router/-/router-3.5.8.tgz#efbbb33c30f1a1e4b1937cb83952c9c1590f7c61"
+  integrity sha512-9dU+TOt2RhHEUVezc8iw+JsII3B/XRyVb8NWGBuOPAO0fpvVKLMdV+2qiB7ZygVS/I0o57kAIlM4xjVY9wbuxw==
+  dependencies:
+    "@tarojs/runtime" "3.5.8"
+    "@tarojs/taro" "3.5.8"
     dingtalk-jsapi "~2.15.2"
     history "^5.1.0"
     mobile-detect "^1.4.2"
