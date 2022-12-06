@@ -1599,23 +1599,33 @@
     "@babel/runtime" "^7.14.5"
     "@tarojs/runtime" "3.5.7"
 
-"@tarojs/cli@3.5.7":
-  version "3.5.7"
-  resolved "https://registry.yarnpkg.com/@tarojs/cli/-/cli-3.5.7.tgz#9edc41c41eff6eba8552397c8aa9554b31ddc91f"
-  integrity sha512-wUHrR2vMgenudsw0gEU6RCZftkLBoTA6UPoGCKCUzhB2NWenpARiRhK37n//YwY4Gq6YKrs9G6Jo92JqISjGGw==
+"@tarojs/api@3.5.8":
+  version "3.5.8"
+  resolved "https://registry.yarnpkg.com/@tarojs/api/-/api-3.5.8.tgz#3927c7b8dca0b14a1efcbb65134afc2542236a73"
+  integrity sha512-13r/C8pZ3ryrdGEsFIDAJnsNED3SGj9l8wBvPuOM4SZ20lpQhW92y/+QnN0bKqrPXq7Y9E5xEX3UkwvEnILmkQ==
+  dependencies:
+    "@babel/runtime" "^7.14.5"
+    "@tarojs/runtime" "3.5.8"
+
+"@tarojs/cli@3.5.8":
+  version "3.5.8"
+  resolved "https://registry.yarnpkg.com/@tarojs/cli/-/cli-3.5.8.tgz#fd896a53ee5fee4e804932ecc4c01c89aee84de4"
+  integrity sha512-gt4MdEjQIRG1G0CjjDCfWVhLNd2aPweI3I2HRnHpU8eIktIfdoTElfhR3Ye4v76rJfFxRx2HcEDZyWscD8gkSw==
   dependencies:
     "@babel/template" "^7.14.5"
     "@babel/traverse" "^7.14.5"
     "@babel/types" "^7.14.5"
-    "@tarojs/helper" "3.5.7"
-    "@tarojs/service" "3.5.7"
-    "@tarojs/shared" "3.5.7"
-    "@tarojs/taroize" "3.5.7"
+    "@tarojs/helper" "3.5.8"
+    "@tarojs/service" "3.5.8"
+    "@tarojs/shared" "3.5.8"
+    "@tarojs/taroize" "3.5.8"
     "@tarojs/transformer-wx" "^2.0.4"
     adm-zip "^0.4.13"
     babylon "^6.18.0"
     better-babel-generator "6.26.1"
     cli-highlight "^2.1.4"
+    dotenv "^16.0.3"
+    dotenv-expand "^9.0.0"
     download-git-repo "^2.0.0"
     ejs "^2.6.1"
     envinfo "^6.0.1"
@@ -1664,6 +1674,34 @@
   version "3.5.7"
   resolved "https://registry.npmmirror.com/@tarojs/helper/-/helper-3.5.7.tgz#efa8bd62eef93a25f5504e5c16be2d54127f8534"
   integrity sha512-8pSRzvEUxvb3X3lDwxZ/wFlNq38e0Em9n2NXuV+lZuX/sQ9j1RxD2j8qfMVTmrR7DbJDKbxx2QJd/Syoy6sn4w==
+  dependencies:
+    "@babel/core" "^7.14.5"
+    "@babel/parser" "^7.14.5"
+    "@babel/plugin-proposal-decorators" "^7.14.5"
+    "@babel/plugin-proposal-object-rest-spread" "^7.14.5"
+    "@babel/plugin-transform-runtime" "^7.14.5"
+    "@babel/preset-env" "^7.14.5"
+    "@babel/preset-typescript" "^7.14.5"
+    "@babel/register" "^7.14.5"
+    "@babel/runtime" "^7.14.5"
+    "@swc/core" "^1.2.204"
+    "@swc/register" "^0.1.10"
+    ansi-escapes "^4.3.2"
+    chalk "3.0.0"
+    chokidar "^3.3.1"
+    cross-spawn "^7.0.3"
+    debug "4.3.4"
+    find-yarn-workspace-root "2.0.0"
+    fs-extra "^8.0.1"
+    lodash "^4.17.21"
+    resolve "^1.22.0"
+    supports-hyperlinks "^2.2.0"
+    yauzl "2.10.0"
+
+"@tarojs/helper@3.5.8":
+  version "3.5.8"
+  resolved "https://registry.yarnpkg.com/@tarojs/helper/-/helper-3.5.8.tgz#2f913922fb4fd6e927c0ff5dc4f2fee998c78c9a"
+  integrity sha512-sr05hh7iJ00YqKY/IZvi8uINYA6qtnLRlg6Mlo3+dqXmeD5pWyUgsuq3TZ7TrHDmNsBqQ0tGa1IEW3WzshvrAA==
   dependencies:
     "@babel/core" "^7.14.5"
     "@babel/parser" "^7.14.5"
@@ -1865,6 +1903,14 @@
     "@tarojs/shared" "3.5.7"
     lodash-es "4.17.21"
 
+"@tarojs/runtime@3.5.8":
+  version "3.5.8"
+  resolved "https://registry.yarnpkg.com/@tarojs/runtime/-/runtime-3.5.8.tgz#691ecaf695fc638fbe2a507161cb4e1352aea6f7"
+  integrity sha512-/BHS7dl8eQjHw2SjQiTrCfGvo77qwmjTe+FiU2hHB4/RO8SdXD4GmQR9M9c1uLvij8ocQVIKhCic73tYWkdswg==
+  dependencies:
+    "@tarojs/shared" "3.5.8"
+    lodash-es "4.17.21"
+
 "@tarojs/service@3.5.7":
   version "3.5.7"
   resolved "https://registry.npmmirror.com/@tarojs/service/-/service-3.5.7.tgz#72d1fbeafef9c363d37ab8f98545954957d252c4"
@@ -1880,10 +1926,30 @@
     tapable "^1.1.3"
     webpack-merge "^4.2.2"
 
+"@tarojs/service@3.5.8":
+  version "3.5.8"
+  resolved "https://registry.yarnpkg.com/@tarojs/service/-/service-3.5.8.tgz#9ff997e52a774ce5ce51ab6f27a5d6f8a4721e55"
+  integrity sha512-QhtFJ8QD9Q/Z/LlfK5nMjMIwhvKaOnzcE6mLmoVMoOF5V6+oerKTqGj51iViyDY0eEoxm7v3JGzuMnD88IspYA==
+  dependencies:
+    "@tarojs/helper" "3.5.8"
+    "@tarojs/shared" "3.5.8"
+    "@tarojs/taro" "3.5.8"
+    fs-extra "^8.1.0"
+    joi "^17.6.0"
+    lodash "^4.17.21"
+    resolve "^1.22.0"
+    tapable "^1.1.3"
+    webpack-merge "^4.2.2"
+
 "@tarojs/shared@3.5.7":
   version "3.5.7"
   resolved "https://registry.npmmirror.com/@tarojs/shared/-/shared-3.5.7.tgz#b4b5aa7e7e4dbc75671a661ab677ce7d44e6bd31"
   integrity sha512-AkYvkydXWlQ52YCyFDSyFv7SebvSOZxDNtod+LG7hpxFEl3Xh5OmMBZGRU1IE6hABRmIUbcfZZhExqYNyEBSCw==
+
+"@tarojs/shared@3.5.8":
+  version "3.5.8"
+  resolved "https://registry.yarnpkg.com/@tarojs/shared/-/shared-3.5.8.tgz#ec728f22993e589e121bdee06e76ad8c9497514f"
+  integrity sha512-37SzGoZZhOBod9/Va13h8d1qIvU10t4kbKRf0TGZQ6tmGxLljSgP4zZFcuHoF5l/yId4IGgf7rN9asJ3K7z4Rg==
 
 "@tarojs/taro-h5@3.5.7":
   version "3.5.7"
@@ -1915,10 +1981,18 @@
     "@tarojs/api" "3.5.7"
     "@tarojs/runtime" "3.5.7"
 
-"@tarojs/taroize@3.5.7":
-  version "3.5.7"
-  resolved "https://registry.npmmirror.com/@tarojs/taroize/-/taroize-3.5.7.tgz#65a5c3fcc205b97b921ff854643d471af9041b76"
-  integrity sha512-/KGRAtnlE2+9pwK3OdD6/fihkLCQWWXNla+Q30oP+bzGXeRtI9UW/OHUhNyBtpES7tJYJ2xNMG7xZZFSLjaWZg==
+"@tarojs/taro@3.5.8":
+  version "3.5.8"
+  resolved "https://registry.yarnpkg.com/@tarojs/taro/-/taro-3.5.8.tgz#768228ca821e909310431c1f4ac80c9c71d7efea"
+  integrity sha512-qrtVz+r+mzXrTY778MQu3MimOBW2lduxG6zbRiZIQBkS9Dm87txRkdO78DoQI4kvi6yrwDG3hCPpTzHqQgf6rA==
+  dependencies:
+    "@tarojs/api" "3.5.8"
+    "@tarojs/runtime" "3.5.8"
+
+"@tarojs/taroize@3.5.8":
+  version "3.5.8"
+  resolved "https://registry.yarnpkg.com/@tarojs/taroize/-/taroize-3.5.8.tgz#252296d8e0097be8c2b42142fc62028e4eea4efb"
+  integrity sha512-y18wJia5irZdXbcUJdTWUkgZG82sd52jaLrT+Envnu7MXtrpv43VFDdJ40FlvQYZIpw2sfY7fiOvvSDZTtbPtw==
   dependencies:
     "@babel/code-frame" "^7.14.5"
     babel-core "^6.26.3"
@@ -5292,6 +5366,16 @@ dot-prop@^4.2.1:
   integrity sha512-l0p4+mIuJIua0mhxGoh4a+iNL9bmeK5DvnSVQa6T0OhrVmaEa1XScX5Etc673FePCJOArq/4Pa2cLGODUWTPOQ==
   dependencies:
     is-obj "^1.0.0"
+
+dotenv-expand@^9.0.0:
+  version "9.0.0"
+  resolved "https://registry.yarnpkg.com/dotenv-expand/-/dotenv-expand-9.0.0.tgz#1fd37e2cd63ea0b5f7389fb87256efc38b035b26"
+  integrity sha512-uW8Hrhp5ammm9x7kBLR6jDfujgaDarNA02tprvZdyrJ7MpdzD1KyrIHG4l+YoC2fJ2UcdFdNWNWIjt+sexBHJw==
+
+dotenv@^16.0.3:
+  version "16.0.3"
+  resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-16.0.3.tgz#115aec42bac5053db3c456db30cc243a5a836a07"
+  integrity sha512-7GO6HghkA5fYG9TYnNxi14/7K9f5occMlp3zXAuSxn7CKCxt9xbNWG7yF8hTCSUchlfWSe3uLmlPfigevRItzQ==
 
 download-git-repo@^2.0.0:
   version "2.0.0"
