@@ -1827,15 +1827,15 @@
     acorn "^8.0.4"
     acorn-walk "^8.0.0"
 
-"@tarojs/plugin-html@3.5.7":
-  version "3.5.7"
-  resolved "https://registry.yarnpkg.com/@tarojs/plugin-html/-/plugin-html-3.5.7.tgz#7082c64971dcfdb6b2211c9c57e7ce50160dc79f"
-  integrity sha512-A6ScKjIpbjGMQIbTiJ1gq3Szsvt/gO62Sih6eyCpXGMxeNmN8E9xW4StnN+pTO+rXM0fyLtozD6JLCikgREQ8w==
+"@tarojs/plugin-html@3.5.8":
+  version "3.5.8"
+  resolved "https://registry.yarnpkg.com/@tarojs/plugin-html/-/plugin-html-3.5.8.tgz#cfb05191d2deff4636395b9c0968f4fd5ca39bd9"
+  integrity sha512-HnSgKRF5gz7u69dEBxAFcifOUMJF18zytc+bUF1bguTDTbnPiSva/UKpHGojembxqLK++XxFnVWrAYHhk56EYQ==
   dependencies:
     "@babel/parser" "^7.14.5"
-    "@tarojs/runtime" "3.5.7"
-    "@tarojs/service" "3.5.7"
-    "@tarojs/shared" "3.5.7"
+    "@tarojs/runtime" "3.5.8"
+    "@tarojs/service" "3.5.8"
+    "@tarojs/shared" "3.5.8"
 
 "@tarojs/plugin-platform-alipay@3.5.8":
   version "3.5.8"
