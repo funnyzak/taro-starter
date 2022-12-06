@@ -64,7 +64,7 @@
 		"@tarojs/components": "3.5.8",
 		"@tarojs/plugin-html": "3.5.8",
 		"@tarojs/react": "3.5.8",
-		"@tarojs/runtime": "3.5.7",
+		"@tarojs/runtime": "3.5.8",
 		"@tarojs/taro": "3.5.8",
 		"crypto-js": "4.1.1",
 		"default-passive-events": "2.0.0",
