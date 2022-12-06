@@ -1900,19 +1900,6 @@
     react-reconciler "0.27.0"
     scheduler "^0.20.1"
 
-"@tarojs/router@3.5.7":
-  version "3.5.7"
-  resolved "https://registry.yarnpkg.com/@tarojs/router/-/router-3.5.7.tgz#83c890bb2ff3d8db995145d73eaff7cb13939cee"
-  integrity sha512-AwJGEBa9OsHJa51TdYbd8S/QcpOym3rzpauf+dU7wc3BpSVqBiUeqMuFS+fen68nelWuasAe6O1NiX0OHV5o3g==
-  dependencies:
-    "@tarojs/runtime" "3.5.7"
-    "@tarojs/taro" "3.5.7"
-    dingtalk-jsapi "~2.15.2"
-    history "^5.1.0"
-    mobile-detect "^1.4.2"
-    query-string "^7.1.1"
-    universal-router "^8.3.0"
-
 "@tarojs/router@3.5.8":
   version "3.5.8"
   resolved "https://registry.yarnpkg.com/@tarojs/router/-/router-3.5.8.tgz#efbbb33c30f1a1e4b1937cb83952c9c1590f7c61"
@@ -1989,19 +1976,6 @@
   version "3.5.8"
   resolved "https://registry.yarnpkg.com/@tarojs/shared/-/shared-3.5.8.tgz#ec728f22993e589e121bdee06e76ad8c9497514f"
   integrity sha512-37SzGoZZhOBod9/Va13h8d1qIvU10t4kbKRf0TGZQ6tmGxLljSgP4zZFcuHoF5l/yId4IGgf7rN9asJ3K7z4Rg==
-
-"@tarojs/taro-h5@3.5.7":
-  version "3.5.7"
-  resolved "https://registry.yarnpkg.com/@tarojs/taro-h5/-/taro-h5-3.5.7.tgz#2183c2b82f34bfa5c09b7a4e9713bace841859bb"
-  integrity sha512-4vIOHoR2PUvqElYtl32eUFVCKHIlVkYMHhBESuet/7KNSD/qX03v56EoPl39+LWdLqKJS+wztKOBpARy2ew9xA==
-  dependencies:
-    "@tarojs/api" "3.5.7"
-    "@tarojs/router" "3.5.7"
-    "@tarojs/runtime" "3.5.7"
-    base64-js "^1.3.0"
-    jsonp-retry "^1.0.3"
-    query-string "^7.1.1"
-    whatwg-fetch "^3.4.0"
 
 "@tarojs/taro-h5@3.5.8":
   version "3.5.8"
@@ -3422,14 +3396,6 @@ babel-plugin-transform-imports-api@1.0.0:
   dependencies:
     is-invalid-path "^1.0.2"
 
-babel-plugin-transform-react-jsx-to-rn-stylesheet@3.5.7:
-  version "3.5.7"
-  resolved "https://registry.yarnpkg.com/babel-plugin-transform-react-jsx-to-rn-stylesheet/-/babel-plugin-transform-react-jsx-to-rn-stylesheet-3.5.7.tgz#6fb73182b935b422752626adf2cc62e0eaebb6f6"
-  integrity sha512-yXIkm9uJ1jDO/zxGPKDEZcYG2+g3qP8+N/MkFUw4sP0zg0rZltEXhjVPb2Ayl5xgDrWXnkdiQf4sV1eTaR4S+Q==
-  dependencies:
-    camelize "^1.0.0"
-    taro-css-to-react-native "3.5.7"
-
 babel-plugin-transform-react-jsx-to-rn-stylesheet@3.5.8:
   version "3.5.8"
   resolved "https://registry.yarnpkg.com/babel-plugin-transform-react-jsx-to-rn-stylesheet/-/babel-plugin-transform-react-jsx-to-rn-stylesheet-3.5.8.tgz#a414ac5cc9f597688896991ee3166a2670d8010c"
@@ -3438,41 +3404,10 @@ babel-plugin-transform-react-jsx-to-rn-stylesheet@3.5.8:
     camelize "^1.0.0"
     taro-css-to-react-native "3.5.8"
 
-babel-plugin-transform-taroapi@3.5.7:
-  version "3.5.7"
-  resolved "https://registry.yarnpkg.com/babel-plugin-transform-taroapi/-/babel-plugin-transform-taroapi-3.5.7.tgz#a5fa1acea106cb4c53602cd31f03f45a23b7623e"
-  integrity sha512-S6Xb9l2Mye1zpkLNIwZhcFanLux/+/SO8H6a4UXS5nSlfby0cYab+VlcYPpwzvJJK1WEuL7kfTjpNOba84Vxcg==
-
 babel-plugin-transform-taroapi@3.5.8:
   version "3.5.8"
   resolved "https://registry.yarnpkg.com/babel-plugin-transform-taroapi/-/babel-plugin-transform-taroapi-3.5.8.tgz#8a611d04d9a5e7f3bb646a66cad2942691571698"
   integrity sha512-Jhf1feSGaTxQvCxuSKA1wm0fDIlyCmZDyhfgQEUx+f+M1OJcDtuk5VQA74VtIa7mz9SDDjaTpBDZs9UKNIxGyA==
-
-babel-preset-taro@3.5.7:
-  version "3.5.7"
-  resolved "https://registry.yarnpkg.com/babel-preset-taro/-/babel-preset-taro-3.5.7.tgz#48914651f62abc16a01f82b8d65dd361a6f5283d"
-  integrity sha512-t+VuRqyZrwY3qqHVRIgPn7RpEVjO6lKvcMzbx8QFReDTL44kLwcgBjbHVoSzNpiBgtomK+O4mR9rWBPfgHQE0w==
-  dependencies:
-    "@babel/plugin-proposal-class-properties" "^7.14.5"
-    "@babel/plugin-proposal-decorators" "^7.14.5"
-    "@babel/plugin-syntax-jsx" "^7.14.5"
-    "@babel/plugin-transform-runtime" "^7.14.5"
-    "@babel/preset-env" "^7.14.5"
-    "@babel/preset-react" "^7.14.5"
-    "@babel/preset-typescript" "^7.14.5"
-    "@babel/runtime" "^7.14.5"
-    "@babel/runtime-corejs3" "^7.14.5"
-    "@tarojs/helper" "3.5.7"
-    "@tarojs/taro-h5" "3.5.7"
-    babel-plugin-dynamic-import-node "2.3.3"
-    babel-plugin-global-define "1.0.3"
-    babel-plugin-jsx-attributes-array-to-object "0.3.0"
-    babel-plugin-minify-dead-code-elimination "^0.5.2"
-    babel-plugin-transform-imports-api "1.0.0"
-    babel-plugin-transform-react-jsx-to-rn-stylesheet "3.5.7"
-    babel-plugin-transform-taroapi "3.5.7"
-    core-js "^3.6.5"
-    metro-react-native-babel-preset "^0.70.3"
 
 babel-preset-taro@3.5.8:
   version "3.5.8"
@@ -12451,17 +12386,6 @@ tar@^6.0.2:
     minizlib "^2.1.1"
     mkdirp "^1.0.3"
     yallist "^4.0.0"
-
-taro-css-to-react-native@3.5.7:
-  version "3.5.7"
-  resolved "https://registry.yarnpkg.com/taro-css-to-react-native/-/taro-css-to-react-native-3.5.7.tgz#b26c011b68607393f9141abc0701f9114b46dd12"
-  integrity sha512-n6+jy5Rzvih0emfSCjvsKG1w+79xK6y/H0XqIUppuwOr+gIrNzfZRWPn4Y1T2z3Xf/woAKULLlt9xc2H1xp1KQ==
-  dependencies:
-    camelize "^1.0.0"
-    css "^3.0.0"
-    css-color-keywords "^1.0.0"
-    css-mediaquery "^0.1.2"
-    postcss-value-parser "^3.3.0"
 
 taro-css-to-react-native@3.5.8:
   version "3.5.8"
