@@ -1815,15 +1815,15 @@
     webpack-format-messages "^2.0.5"
     webpack-sources "^1.4.3"
 
-"@tarojs/plugin-framework-react@3.5.7":
-  version "3.5.7"
-  resolved "https://registry.yarnpkg.com/@tarojs/plugin-framework-react/-/plugin-framework-react-3.5.7.tgz#d202b9d072f39a4a712f1cc4b689cd778ca17ace"
-  integrity sha512-VZzKK3uIBqExUv9YRQz3XBMd1QZyuzbU5fwpvVRZDltWWNUOgFv3+svTnWkTcCI4yb3pAEb4QJqkZzLy2Cmtpw==
+"@tarojs/plugin-framework-react@3.5.8":
+  version "3.5.8"
+  resolved "https://registry.yarnpkg.com/@tarojs/plugin-framework-react/-/plugin-framework-react-3.5.8.tgz#bbbb21cc03f6c04c5579bb86988a4986f6dc5679"
+  integrity sha512-K9KdJAU9n9g+KG2fDM3g0MhizYlGRbWValNlMBorEFjvmvt0A2STsNVcFjt0xihOazrAmzvTGfL9CU/PH4T6tg==
   dependencies:
-    "@tarojs/helper" "3.5.7"
-    "@tarojs/runtime" "3.5.7"
-    "@tarojs/service" "3.5.7"
-    "@tarojs/shared" "3.5.7"
+    "@tarojs/helper" "3.5.8"
+    "@tarojs/runtime" "3.5.8"
+    "@tarojs/service" "3.5.8"
+    "@tarojs/shared" "3.5.8"
     acorn "^8.0.4"
     acorn-walk "^8.0.0"
 
