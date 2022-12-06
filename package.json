@@ -59,7 +59,7 @@
 		"ios >= 8"
 	],
 	"dependencies": {
-		"@babel/runtime": "7.20.1",
+		"@babel/runtime": "7.20.6",
 		"@tarojs/cli": "3.5.8",
 		"@tarojs/components": "3.5.8",
 		"@tarojs/plugin-html": "3.5.7",
@@ -74,7 +74,7 @@
 		"taro-ui": "2.3.4"
 	},
 	"devDependencies": {
-		"@babel/core": "7.20.2",
+		"@babel/core": "7.20.5",
 		"@tarojs/mini-runner": "3.5.8",
 		"@tarojs/plugin-framework-react": "3.5.7",
 		"@tarojs/webpack-runner": "3.5.8",
