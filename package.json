@@ -65,7 +65,7 @@
 		"@tarojs/plugin-html": "3.5.7",
 		"@tarojs/react": "3.5.8",
 		"@tarojs/runtime": "3.5.7",
-		"@tarojs/taro": "3.5.7",
+		"@tarojs/taro": "3.5.8",
 		"crypto-js": "4.1.1",
 		"default-passive-events": "2.0.0",
 		"lodash": "4.17.21",
