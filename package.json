@@ -84,7 +84,7 @@
 		"@typescript-eslint/parser": "5.45.1",
 		"babel-preset-taro": "3.5.7",
 		"cross-env": "7.0.3",
-		"eslint": "8.28.0",
+		"eslint": "8.29.0",
 		"eslint-config-prettier": "8.5.0",
 		"eslint-config-taro": "3.5.8",
 		"eslint-define-config": "1.12.0",
