@@ -5778,10 +5778,10 @@ eslint-config-prettier@8.5.0:
   resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-8.5.0.tgz#5a81680ec934beca02c7b1a61cf8ca34b66feab1"
   integrity sha512-obmWKLUNCnhtQRKc+tmnYuQl0pFU1ibYJQ5BGhTVB08bHe9wC8qUeG7c08dj9XX+AuPj1YSGSQIHl1pnDHZR0Q==
 
-eslint-config-taro@3.5.8:
-  version "3.5.8"
-  resolved "https://registry.yarnpkg.com/eslint-config-taro/-/eslint-config-taro-3.5.8.tgz#fee91a2d1ca15ffb30e22154be2cfcca2515c857"
-  integrity sha512-IWxtvnkVqfpXipH3rvaxuu6AB3UvOzgqkzXCrC8IjhK9OvE4nv72lsPBcEjHCgOLUtD3DF+mpuLDWzMqYwYr6g==
+eslint-config-taro@3.5.10:
+  version "3.5.10"
+  resolved "https://registry.yarnpkg.com/eslint-config-taro/-/eslint-config-taro-3.5.10.tgz#df5c6d59d8c1dc208ee33d51a8f57e276534c3f7"
+  integrity sha512-SBW8YLuY1gbFWfgJiWda8zgSVYIfgBqZ+aEy8kgJbC3uA23GhFgj+fqe/DhZjXJNAqDOlalzG+lvKH6F+WEVBg==
   dependencies:
     "@babel/eslint-parser" "^7.17.0"
     "@typescript-eslint/parser" "^5.20.0"
