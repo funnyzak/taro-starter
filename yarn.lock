@@ -1620,6 +1620,14 @@
   dependencies:
     defer-to-connect "^1.0.1"
 
+"@tarojs/api@3.5.10":
+  version "3.5.10"
+  resolved "https://registry.yarnpkg.com/@tarojs/api/-/api-3.5.10.tgz#5291ba02dde0a8efa77df25bd98f6aeda322520c"
+  integrity sha512-xyAz6X3rwHlwfTXQaqDBisu+hfncZDbN7ViTPbdOwcbOt6crguvTpdycvxLqDQmXZj5XdKx8c+eGMBZ7Ya0x0g==
+  dependencies:
+    "@babel/runtime" "^7.14.5"
+    "@tarojs/runtime" "3.5.10"
+
 "@tarojs/api@3.5.8":
   version "3.5.8"
   resolved "https://registry.yarnpkg.com/@tarojs/api/-/api-3.5.8.tgz#3927c7b8dca0b14a1efcbb65134afc2542236a73"
@@ -1709,6 +1717,34 @@
     resolve-pathname "^3.0.0"
     swiper "6.8.0"
     weui "^1.1.2"
+
+"@tarojs/helper@3.5.10":
+  version "3.5.10"
+  resolved "https://registry.yarnpkg.com/@tarojs/helper/-/helper-3.5.10.tgz#307cdefe7cee06d999db8abbd41f2f5899096956"
+  integrity sha512-IP/RT00GvdbYZAIV8kGRG+wssDMbbmpFvnNe69uJgb38L+lB0EtOZ2uZJGzRvND8H6fEUA3cPLb2s+l4gLwaqA==
+  dependencies:
+    "@babel/core" "^7.14.5"
+    "@babel/parser" "^7.14.5"
+    "@babel/plugin-proposal-decorators" "^7.14.5"
+    "@babel/plugin-proposal-object-rest-spread" "^7.14.5"
+    "@babel/plugin-transform-runtime" "^7.14.5"
+    "@babel/preset-env" "^7.14.5"
+    "@babel/preset-typescript" "^7.14.5"
+    "@babel/register" "^7.14.5"
+    "@babel/runtime" "^7.14.5"
+    "@swc/core" "^1.2.204"
+    "@swc/register" "^0.1.10"
+    ansi-escapes "^4.3.2"
+    chalk "3.0.0"
+    chokidar "^3.3.1"
+    cross-spawn "^7.0.3"
+    debug "4.3.4"
+    find-yarn-workspace-root "2.0.0"
+    fs-extra "^8.0.1"
+    lodash "^4.17.21"
+    resolve "^1.22.0"
+    supports-hyperlinks "^2.2.0"
+    yauzl "2.10.0"
 
 "@tarojs/helper@3.5.8":
   version "3.5.8"
@@ -1940,12 +1976,12 @@
     query-string "^7.1.1"
     universal-router "^8.3.0"
 
-"@tarojs/runner-utils@3.5.8":
-  version "3.5.8"
-  resolved "https://registry.yarnpkg.com/@tarojs/runner-utils/-/runner-utils-3.5.8.tgz#ed595d258b694a9a03965c74b367c965fbf8ca29"
-  integrity sha512-ofQWioPsl2wAKd5d/LaG5UwNU1b4aQzd59tW+HNyllV0Bv5YYVCetvkoqEdEsAk/seLQfdTaoleXNFmN5MGWOg==
+"@tarojs/runner-utils@3.5.10":
+  version "3.5.10"
+  resolved "https://registry.yarnpkg.com/@tarojs/runner-utils/-/runner-utils-3.5.10.tgz#e041613449cc88b88ba5de33e2f41bae0681acf2"
+  integrity sha512-GyoNSNPw55TfzU08L3/gIjRz4jOihYEBvw1DgivYANKwkEnGhQy3dVRSO5Zv/77/JID0utPf+a+V9rwaryzVtQ==
   dependencies:
-    "@tarojs/helper" "3.5.8"
+    "@tarojs/helper" "3.5.10"
     scss-bundle "^3.0.2"
 
 "@tarojs/runner-utils@3.5.9":
@@ -1955,6 +1991,14 @@
   dependencies:
     "@tarojs/helper" "3.5.9"
     scss-bundle "^3.0.2"
+
+"@tarojs/runtime@3.5.10":
+  version "3.5.10"
+  resolved "https://registry.yarnpkg.com/@tarojs/runtime/-/runtime-3.5.10.tgz#c1168ed1c4dc812cdcca850d36678a52c8f57c76"
+  integrity sha512-zlDVnFAf3sE8Vs1IyT1dpUDiFlmyWpGsAjjc2i7kn/A/1LC8q6NwbOeCb/DuF7B3aT3mVNXkw9NFsggi8yDI6A==
+  dependencies:
+    "@tarojs/shared" "3.5.10"
+    lodash-es "4.17.21"
 
 "@tarojs/runtime@3.5.8":
   version "3.5.8"
@@ -2002,6 +2046,11 @@
     tapable "^1.1.3"
     webpack-merge "^4.2.2"
 
+"@tarojs/shared@3.5.10":
+  version "3.5.10"
+  resolved "https://registry.yarnpkg.com/@tarojs/shared/-/shared-3.5.10.tgz#b46630620fb2a82ccb3393b47f6d4f181dd43ed0"
+  integrity sha512-RN2e0fJfYEIofOnhha5CiGN4JtIS2ZU9lRuzASxb1BOdq/cxp+Om2rqATHL0D3Q1jBkf8xMVOZ77BoT0R/pIIw==
+
 "@tarojs/shared@3.5.8":
   version "3.5.8"
   resolved "https://registry.yarnpkg.com/@tarojs/shared/-/shared-3.5.8.tgz#ec728f22993e589e121bdee06e76ad8c9497514f"
@@ -2038,13 +2087,13 @@
     query-string "^7.1.1"
     whatwg-fetch "^3.4.0"
 
-"@tarojs/taro-loader@3.5.8":
-  version "3.5.8"
-  resolved "https://registry.yarnpkg.com/@tarojs/taro-loader/-/taro-loader-3.5.8.tgz#6068c0ca48c3a510752b3576b702bef1082c7188"
-  integrity sha512-Sst+DN7mQVaZxCwkj8mz68bjGxSaXCNjZbTGlAT50f6pQbhTCXq3d8C7pGuf/VyncP2BL705p/n/0+sELP+5fw==
+"@tarojs/taro-loader@3.5.10":
+  version "3.5.10"
+  resolved "https://registry.yarnpkg.com/@tarojs/taro-loader/-/taro-loader-3.5.10.tgz#52c6ebc4a800e94dac205c7b5f979e9a01e52a7c"
+  integrity sha512-QyLETnJg9fFujxuSounBJ7pXnoKl2VLXy8hj2T2zDzV7ailJ2M397Gs402PC9/fhZ5Ao35tXEd8w6DsKoaR+qw==
   dependencies:
-    "@tarojs/helper" "3.5.8"
-    "@tarojs/taro" "3.5.8"
+    "@tarojs/helper" "3.5.10"
+    "@tarojs/taro" "3.5.10"
     loader-utils "^1.2.3"
 
 "@tarojs/taro-loader@3.5.9":
@@ -2055,6 +2104,14 @@
     "@tarojs/helper" "3.5.9"
     "@tarojs/taro" "3.5.9"
     loader-utils "^1.2.3"
+
+"@tarojs/taro@3.5.10":
+  version "3.5.10"
+  resolved "https://registry.yarnpkg.com/@tarojs/taro/-/taro-3.5.10.tgz#004b161099b89e0ca29311394694784445934a40"
+  integrity sha512-WU+y8AAdbSZS9Oexz34irKkVxRkGkTpu70mDxYenfrrkgY6tOuQ/EmHavuxmQ7aEoFIjgm6s6pW91jd2AyOh+w==
+  dependencies:
+    "@tarojs/api" "3.5.10"
+    "@tarojs/runtime" "3.5.10"
 
 "@tarojs/taro@3.5.8":
   version "3.5.8"
@@ -2120,16 +2177,16 @@
     prettier "^1.14.2"
     typescript "^3.2.2"
 
-"@tarojs/webpack-runner@3.5.8":
-  version "3.5.8"
-  resolved "https://registry.yarnpkg.com/@tarojs/webpack-runner/-/webpack-runner-3.5.8.tgz#947cbae20164fb22192863f29256a6daafec45a9"
-  integrity sha512-cPBsF67fWd8VOY9thOPEwgPFX5nt1HtnM7S/U88n/CmEQJj2foLufdMnGXtVYWoe4onyOmU4Hn4K9osliwbB6g==
+"@tarojs/webpack-runner@3.5.10":
+  version "3.5.10"
+  resolved "https://registry.yarnpkg.com/@tarojs/webpack-runner/-/webpack-runner-3.5.10.tgz#1304d542c77b99539b561ba2b32187f5ebef78e4"
+  integrity sha512-m6y07qVxHdUV+sBHj6uYchCFJRD+Nro83m6TCywOOsfrcyIG2qMGp2KAUOBcCThCNgm9UtnaaYlAEyWG2YI6gw==
   dependencies:
-    "@tarojs/helper" "3.5.8"
-    "@tarojs/runner-utils" "3.5.8"
-    "@tarojs/runtime" "3.5.8"
-    "@tarojs/taro" "3.5.8"
-    "@tarojs/taro-loader" "3.5.8"
+    "@tarojs/helper" "3.5.10"
+    "@tarojs/runner-utils" "3.5.10"
+    "@tarojs/runtime" "3.5.10"
+    "@tarojs/taro" "3.5.10"
+    "@tarojs/taro-loader" "3.5.10"
     autoprefixer "^9.7.4"
     babel-loader "8.2.1"
     copy-webpack-plugin "5.1.2"
@@ -2146,11 +2203,11 @@
     open "7.0.2"
     ora "4.0.3"
     postcss "8.3.5"
-    postcss-html-transform "3.5.8"
+    postcss-html-transform "3.5.10"
     postcss-import "12.0.1"
     postcss-loader "4.3.0"
-    postcss-plugin-constparse "3.5.8"
-    postcss-pxtransform "3.5.8"
+    postcss-plugin-constparse "3.5.10"
+    postcss-pxtransform "3.5.10"
     postcss-url "8.0.0"
     resolve "^1.22.0"
     resolve-url-loader "3.1.3"
@@ -10351,10 +10408,10 @@ posix-character-classes@^0.1.0:
   resolved "https://registry.npmmirror.com/posix-character-classes/-/posix-character-classes-0.1.1.tgz#01eac0fe3b5af71a2a6c02feabb8c1fef7e00eab"
   integrity sha512-xTgYBc3fuo7Yt7JbiuFxSYGToMoz8fLoE6TC9Wx1P/u+LfeThMOAqmuyECnlBaaJb+u1m9hHiXUEtwW4OzfUJg==
 
-postcss-html-transform@3.5.8:
-  version "3.5.8"
-  resolved "https://registry.yarnpkg.com/postcss-html-transform/-/postcss-html-transform-3.5.8.tgz#a2b0e55cc3b228d1702e4d9f1bfa1ee6a1ee4716"
-  integrity sha512-XihrQfAgn1cMm9e0wLgRh51nr+PAAuB+t6zmdDggrr9Lv0PPRPAGitmkJFFio0bsDybYIVJUKLpCNhf3y+LXcQ==
+postcss-html-transform@3.5.10:
+  version "3.5.10"
+  resolved "https://registry.yarnpkg.com/postcss-html-transform/-/postcss-html-transform-3.5.10.tgz#35bbcd5e1c993a1e41079e338c77319294ecf5dd"
+  integrity sha512-4Sp9Nkj8jnqSLJd2G7lIJ8BFPyJAUWxqzhKg4JEHuVdgRU6mms0LdO0frP1hW+QwIbJu0aZzOrsE7cV1PR9JqA==
   dependencies:
     postcss "^6.0.22"
 
@@ -10424,17 +10481,17 @@ postcss-modules-values@^3.0.0:
     icss-utils "^4.0.0"
     postcss "^7.0.6"
 
-postcss-plugin-constparse@3.5.8:
-  version "3.5.8"
-  resolved "https://registry.yarnpkg.com/postcss-plugin-constparse/-/postcss-plugin-constparse-3.5.8.tgz#a25654129c05a3099d8c33af0add9b20ba1a306b"
-  integrity sha512-2Iu9FFM/3x2dbWeA5TGU/oAGhLJEteSqAK5oyxkX9+lupYF2PAZE1SnL/pu4oo7MNHBjbxJ+QJJ91fpArolQiA==
+postcss-plugin-constparse@3.5.10:
+  version "3.5.10"
+  resolved "https://registry.yarnpkg.com/postcss-plugin-constparse/-/postcss-plugin-constparse-3.5.10.tgz#f5882dace1c1dd92341711ecdd06eaa257743c76"
+  integrity sha512-+TWLqsLnluGCY0Heyk2Ym6xhwVusaCBxUP7PxRjMDG9r5OBxDsQvtQWa5Kb3pr76B97M27f/n3cDI4V0IURLGw==
   dependencies:
     postcss "^6.0.22"
 
-postcss-pxtransform@3.5.8:
-  version "3.5.8"
-  resolved "https://registry.yarnpkg.com/postcss-pxtransform/-/postcss-pxtransform-3.5.8.tgz#ec9758d6d7f9710fbf89071966be71244a4324d2"
-  integrity sha512-l5v3UeQy2fDNPez0uSnxbcooQ009Uhn3pZMeLsM/juuy7exSjvs/Gt4jIh9OYCdkQ6UjsNO77DAyo8B7SR2ivA==
+postcss-pxtransform@3.5.10:
+  version "3.5.10"
+  resolved "https://registry.yarnpkg.com/postcss-pxtransform/-/postcss-pxtransform-3.5.10.tgz#cba4c40edb8a9db9bec3faa4f71e184ee94c96ef"
+  integrity sha512-akyrbGK2AbbpsF7zfB0NkIwV+hAQCzvCjtwYB3WcTDVrKO63JnjjXNuTOQfeflkY7DIKJkfYZGfjgxF0jG+oCg==
   dependencies:
     postcss "^6.0.22"
 
