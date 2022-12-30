@@ -1517,10 +1517,20 @@
   resolved "https://registry.npmmirror.com/@swc/core-darwin-arm64/-/core-darwin-arm64-1.3.10.tgz#65bd6ffe7e5188975b1497e5310a29fa14b58fdb"
   integrity sha512-X1eM5LDk24W/pbGamwpMRGkQW1BC+1xYNzS38hiK5YCS20TDZwI5LIg2pTEecKl/SRt1WFMwAThUwKbp4m1HIA==
 
+"@swc/core-darwin-arm64@1.3.24":
+  version "1.3.24"
+  resolved "https://registry.yarnpkg.com/@swc/core-darwin-arm64/-/core-darwin-arm64-1.3.24.tgz#d41fc574cb5049def9001903680fdd924f065052"
+  integrity sha512-rR+9UpWm+fGXcipsjCst2hIL1GYIbo0YTLhJZWdIpQD6KRHHJMFXiydMgQQkDj2Ml7HpqUVgxj6m4ZWYL8b0OA==
+
 "@swc/core-darwin-x64@1.3.10":
   version "1.3.10"
   resolved "https://registry.npmmirror.com/@swc/core-darwin-x64/-/core-darwin-x64-1.3.10.tgz#3ad9073b6aeede0c147376844fb1381976c0c13c"
   integrity sha512-wrsv6upfEzwCGHB7y7IsdrppyywNV7C5TZDXVYv3GCUQZAFlRBar+1yHMojuPxPvyjjfHtTEr68MOhUwq9ti3w==
+
+"@swc/core-darwin-x64@1.3.24":
+  version "1.3.24"
+  resolved "https://registry.yarnpkg.com/@swc/core-darwin-x64/-/core-darwin-x64-1.3.24.tgz#0f7a3960b91cbd7f95f25542b29d0e08bde4f59d"
+  integrity sha512-px+5vkGtgPH0m3FkkTBHynlRdS5rRz+lK+wiXIuBZFJSySWFl6RkKbvwkD+sf0MpazQlqwlv/rTOGJBw6oDffg==
 
 "@swc/core-freebsd-x64@1.3.10":
   version "1.3.10"
@@ -1536,25 +1546,50 @@
   dependencies:
     "@swc/wasm" "1.2.130"
 
+"@swc/core-linux-arm-gnueabihf@1.3.24":
+  version "1.3.24"
+  resolved "https://registry.yarnpkg.com/@swc/core-linux-arm-gnueabihf/-/core-linux-arm-gnueabihf-1.3.24.tgz#a0fdd97b8341806b57290217830a5d1ab7d0b193"
+  integrity sha512-jLs8ZOdTV4UW4J12E143QJ4mOMONQtqgAnuhBbRuWFzQ3ny1dfoC3P1jNWAJ2Xi59XdxAIXn0PggPNH4Kh34kw==
+
 "@swc/core-linux-arm64-gnu@1.3.10":
   version "1.3.10"
   resolved "https://registry.npmmirror.com/@swc/core-linux-arm64-gnu/-/core-linux-arm64-gnu-1.3.10.tgz#c0af92499374ea775e8da0e871d0d0e6a74d0643"
   integrity sha512-OaOd+wFbcTQwOD9Ce5luUp8qYoEvdX3s00Bby+j7hybu1fVZK4W40cqzVRp/EDElriG0I+tAdFvQW7PCcEzsPQ==
+
+"@swc/core-linux-arm64-gnu@1.3.24":
+  version "1.3.24"
+  resolved "https://registry.yarnpkg.com/@swc/core-linux-arm64-gnu/-/core-linux-arm64-gnu-1.3.24.tgz#0536d03e12dd471ebafc180599488404aebb65cf"
+  integrity sha512-A/v0h70BekrwGpp1DlzIFGcHQ3QQ2PexXcnnuIBZeMc9gNmHlcZmg3EcwAnaUDiokhNuSUFA/wV94yk1OqmSkw==
 
 "@swc/core-linux-arm64-musl@1.3.10":
   version "1.3.10"
   resolved "https://registry.npmmirror.com/@swc/core-linux-arm64-musl/-/core-linux-arm64-musl-1.3.10.tgz#84c91a35af2353b31461c1bd5aab055158b168e9"
   integrity sha512-AUzQ/5T2hoNIgZlnbflDufWDEfJbw+w8FwKoCp7kKyLLAXG8RHgTsx0TazzQ8PVcAQk8lWI2EBrObLL82n91kQ==
 
+"@swc/core-linux-arm64-musl@1.3.24":
+  version "1.3.24"
+  resolved "https://registry.yarnpkg.com/@swc/core-linux-arm64-musl/-/core-linux-arm64-musl-1.3.24.tgz#54f46ffea1bf6ffcbe7c62037efaefdfb5115214"
+  integrity sha512-pbc9eArWPTiMrbpS/pJo0IiQNAKAQBcBIDjWBGP1tcw2iDXYLw4bruwz9kI/VjakbshWb8MoE4T5ClkeuULvSw==
+
 "@swc/core-linux-x64-gnu@1.3.10":
   version "1.3.10"
   resolved "https://registry.npmmirror.com/@swc/core-linux-x64-gnu/-/core-linux-x64-gnu-1.3.10.tgz#6f67b3836ee0a72da14155efe700dc706029de5a"
   integrity sha512-rjAyQVRkHCWvCA0wyk0nhJdVMfown6wLvDztKZ0wyT6NDDFdvekTMgALQXL5MW4Q0MYBvGMSauoysTZCdZW9aA==
 
+"@swc/core-linux-x64-gnu@1.3.24":
+  version "1.3.24"
+  resolved "https://registry.yarnpkg.com/@swc/core-linux-x64-gnu/-/core-linux-x64-gnu-1.3.24.tgz#c2b5cef83f8afd2a57d0eafbac083562d50cd0e6"
+  integrity sha512-pP5pOLlY1xd352qo7rTlpVPUI9/9VhOd4b3Lk+LzfZDq9bTL2NDlGfyrPiwa5DGHMSzrugH56K2J68eutkxYVA==
+
 "@swc/core-linux-x64-musl@1.3.10":
   version "1.3.10"
   resolved "https://registry.npmmirror.com/@swc/core-linux-x64-musl/-/core-linux-x64-musl-1.3.10.tgz#b2035a4af1e6825e30e08e756c45b4a078dfef07"
   integrity sha512-X5KFbPTxcXaycGOrKoiPNCBUOjhCf8GpeNFpM7QASEWulWWM7nkMPrNeXKmQgJBlRT2j3iLine4Pkyc2bLPlVg==
+
+"@swc/core-linux-x64-musl@1.3.24":
+  version "1.3.24"
+  resolved "https://registry.yarnpkg.com/@swc/core-linux-x64-musl/-/core-linux-x64-musl-1.3.24.tgz#3459d01f9bf745568a4196c1993987f3d4a98303"
+  integrity sha512-phNbP7zGp+Wcyxq1Qxlpe5KkxO7WLT2kVQUC7aDFGlVdCr+xdXsfH1MzheHtnr0kqTVQX1aiM8XXXHfFxR0oNA==
 
 "@swc/core-win32-arm64-msvc@1.3.10":
   version "1.3.10"
@@ -1563,6 +1598,11 @@
   dependencies:
     "@swc/wasm" "1.2.130"
 
+"@swc/core-win32-arm64-msvc@1.3.24":
+  version "1.3.24"
+  resolved "https://registry.yarnpkg.com/@swc/core-win32-arm64-msvc/-/core-win32-arm64-msvc-1.3.24.tgz#85a18c844c00d66bf46db99d9c98e9550b4d28f5"
+  integrity sha512-qhbiJTWAOqyR+K9xnGmCkOWSz2EmWpDBstEJCEOTc6FZiEdbiTscDmqTcMbCKaTHGu8t+6erVA4t65/Eg6uWPA==
+
 "@swc/core-win32-ia32-msvc@1.3.10":
   version "1.3.10"
   resolved "https://registry.npmmirror.com/@swc/core-win32-ia32-msvc/-/core-win32-ia32-msvc-1.3.10.tgz#d011aa2a482a71b580d2fb13a256f0fe3775a45c"
@@ -1570,10 +1610,20 @@
   dependencies:
     "@swc/wasm" "1.2.130"
 
+"@swc/core-win32-ia32-msvc@1.3.24":
+  version "1.3.24"
+  resolved "https://registry.yarnpkg.com/@swc/core-win32-ia32-msvc/-/core-win32-ia32-msvc-1.3.24.tgz#18318199ba06cab4ead8f6122b9f30b3f452b1e7"
+  integrity sha512-JfghIlscE4Rz+Lc08lSoDh+R0cWxrISed5biogFfE6vZqhaDnw3E5Qshqw7O3pIaiq8L2u1nmzuyP581ZmpbRA==
+
 "@swc/core-win32-x64-msvc@1.3.10":
   version "1.3.10"
   resolved "https://registry.npmmirror.com/@swc/core-win32-x64-msvc/-/core-win32-x64-msvc-1.3.10.tgz#59ee9a8e250ffd431295cb8e142462413f04cd62"
   integrity sha512-40yeeov6XcJHm99anMeEn/NwhDcoM2fhBQHWRVZfCa43QC45AUjJ3kWrD76U6MPGnGy7MsCOXdFyu1mJOAHKEw==
+
+"@swc/core-win32-x64-msvc@1.3.24":
+  version "1.3.24"
+  resolved "https://registry.yarnpkg.com/@swc/core-win32-x64-msvc/-/core-win32-x64-msvc-1.3.24.tgz#b53746787e5af021787134d393fd67b0431f90d9"
+  integrity sha512-3AmJRr0hwciwDBbzUNqaftvppzS8v9X/iv/Wl7YaVLBVpPfQvaZzfqLycvNMGLZb5vIKXR/u58txg3dRBGsJtw==
 
 "@swc/core@^1.2.204":
   version "1.3.10"
@@ -1593,6 +1643,22 @@
     "@swc/core-win32-arm64-msvc" "1.3.10"
     "@swc/core-win32-ia32-msvc" "1.3.10"
     "@swc/core-win32-x64-msvc" "1.3.10"
+
+"@swc/core@^1.3.23":
+  version "1.3.24"
+  resolved "https://registry.yarnpkg.com/@swc/core/-/core-1.3.24.tgz#ef6b30267c1bbd48af62cbc91370fe9b3f5d6a23"
+  integrity sha512-QMOTd0AgiUT3K1crxLRqd3gw0f3FC8hhH1vvlIlryvYqU4c+FJ/T2G4ZhMKLxQlZ/jX6Rhk0gKINZRBxy2GFyQ==
+  optionalDependencies:
+    "@swc/core-darwin-arm64" "1.3.24"
+    "@swc/core-darwin-x64" "1.3.24"
+    "@swc/core-linux-arm-gnueabihf" "1.3.24"
+    "@swc/core-linux-arm64-gnu" "1.3.24"
+    "@swc/core-linux-arm64-musl" "1.3.24"
+    "@swc/core-linux-x64-gnu" "1.3.24"
+    "@swc/core-linux-x64-musl" "1.3.24"
+    "@swc/core-win32-arm64-msvc" "1.3.24"
+    "@swc/core-win32-ia32-msvc" "1.3.24"
+    "@swc/core-win32-x64-msvc" "1.3.24"
 
 "@swc/register@^0.1.10":
   version "0.1.10"
@@ -1627,6 +1693,14 @@
   dependencies:
     "@babel/runtime" "^7.14.5"
     "@tarojs/runtime" "3.5.10"
+
+"@tarojs/api@3.5.11":
+  version "3.5.11"
+  resolved "https://registry.yarnpkg.com/@tarojs/api/-/api-3.5.11.tgz#df29d03e37380cae5f5e36feebc6dbe889a19317"
+  integrity sha512-PaWkCBY/2SrTCLSMyClGYJLzAdij9twRzEED1AqK9ssm4wk1lW5cXq8veRVmgzFU2iRHPmgM0FCETQxBX8LcSA==
+  dependencies:
+    "@babel/runtime" "^7.14.5"
+    "@tarojs/runtime" "3.5.11"
 
 "@tarojs/api@3.5.8":
   version "3.5.8"
@@ -1733,6 +1807,34 @@
     "@babel/register" "^7.14.5"
     "@babel/runtime" "^7.14.5"
     "@swc/core" "^1.2.204"
+    "@swc/register" "^0.1.10"
+    ansi-escapes "^4.3.2"
+    chalk "3.0.0"
+    chokidar "^3.3.1"
+    cross-spawn "^7.0.3"
+    debug "4.3.4"
+    find-yarn-workspace-root "2.0.0"
+    fs-extra "^8.0.1"
+    lodash "^4.17.21"
+    resolve "^1.22.0"
+    supports-hyperlinks "^2.2.0"
+    yauzl "2.10.0"
+
+"@tarojs/helper@3.5.11":
+  version "3.5.11"
+  resolved "https://registry.yarnpkg.com/@tarojs/helper/-/helper-3.5.11.tgz#74006bbba64978a97d3148b95b6ccd70040b8bc3"
+  integrity sha512-JwCdkhqYq4yql8C/+Q9wz7SGRyoZKYOpxav+vPBZxUmgZx/Yt6XLCQ8acnCRzYeu8fUGZz+68zzGatxPeMBKOA==
+  dependencies:
+    "@babel/core" "^7.14.5"
+    "@babel/parser" "^7.14.5"
+    "@babel/plugin-proposal-decorators" "^7.14.5"
+    "@babel/plugin-proposal-object-rest-spread" "^7.14.5"
+    "@babel/plugin-transform-runtime" "^7.14.5"
+    "@babel/preset-env" "^7.14.5"
+    "@babel/preset-typescript" "^7.14.5"
+    "@babel/register" "^7.14.5"
+    "@babel/runtime" "^7.14.5"
+    "@swc/core" "^1.3.23"
     "@swc/register" "^0.1.10"
     ansi-escapes "^4.3.2"
     chalk "3.0.0"
@@ -1865,15 +1967,15 @@
     webpack-format-messages "^2.0.5"
     webpack-sources "^1.4.3"
 
-"@tarojs/plugin-framework-react@3.5.8":
-  version "3.5.8"
-  resolved "https://registry.yarnpkg.com/@tarojs/plugin-framework-react/-/plugin-framework-react-3.5.8.tgz#bbbb21cc03f6c04c5579bb86988a4986f6dc5679"
-  integrity sha512-K9KdJAU9n9g+KG2fDM3g0MhizYlGRbWValNlMBorEFjvmvt0A2STsNVcFjt0xihOazrAmzvTGfL9CU/PH4T6tg==
+"@tarojs/plugin-framework-react@3.5.11":
+  version "3.5.11"
+  resolved "https://registry.yarnpkg.com/@tarojs/plugin-framework-react/-/plugin-framework-react-3.5.11.tgz#54ab63dac5d6b321a41b429f0caa6e08b0af5ed8"
+  integrity sha512-6hGBYot05PCGd/qKEQioHLnEffALg+zYcCiSYrZV/m4XqtTu6njKiet8RO68hGnyzEcpEOGXuP/dE1tkfu1c2w==
   dependencies:
-    "@tarojs/helper" "3.5.8"
-    "@tarojs/runtime" "3.5.8"
-    "@tarojs/service" "3.5.8"
-    "@tarojs/shared" "3.5.8"
+    "@tarojs/helper" "3.5.11"
+    "@tarojs/runtime" "3.5.11"
+    "@tarojs/service" "3.5.11"
+    "@tarojs/shared" "3.5.11"
     acorn "^8.0.4"
     acorn-walk "^8.0.0"
 
@@ -2000,6 +2102,14 @@
     "@tarojs/shared" "3.5.10"
     lodash-es "4.17.21"
 
+"@tarojs/runtime@3.5.11":
+  version "3.5.11"
+  resolved "https://registry.yarnpkg.com/@tarojs/runtime/-/runtime-3.5.11.tgz#f4c6847812a24359f02f4bc40f55da7c02808a44"
+  integrity sha512-GVtYgxmJjt+7x86H6qPJKD2e9Pa+UHXZkzdU0OtOE3XIDr7W6AM8pSmw3jHXei0QRUKBhUXMbnCbAVjPpGN2nQ==
+  dependencies:
+    "@tarojs/shared" "3.5.11"
+    lodash-es "4.17.21"
+
 "@tarojs/runtime@3.5.8":
   version "3.5.8"
   resolved "https://registry.yarnpkg.com/@tarojs/runtime/-/runtime-3.5.8.tgz#691ecaf695fc638fbe2a507161cb4e1352aea6f7"
@@ -2024,6 +2134,21 @@
     "@tarojs/helper" "3.5.10"
     "@tarojs/shared" "3.5.10"
     "@tarojs/taro" "3.5.10"
+    fs-extra "^8.1.0"
+    joi "^17.6.0"
+    lodash "^4.17.21"
+    resolve "^1.22.0"
+    tapable "^1.1.3"
+    webpack-merge "^4.2.2"
+
+"@tarojs/service@3.5.11":
+  version "3.5.11"
+  resolved "https://registry.yarnpkg.com/@tarojs/service/-/service-3.5.11.tgz#d00cdd2c67a935537261d79970b03a5e07127421"
+  integrity sha512-lDbt1RKHieuWUa8gPn2JuwbXlMlGhAqjLOE7McJOlGw+VY4Ly4PBfpVbcLNLLK6h9uJ9Fzqcl/akgRneEs+nfg==
+  dependencies:
+    "@tarojs/helper" "3.5.11"
+    "@tarojs/shared" "3.5.11"
+    "@tarojs/taro" "3.5.11"
     fs-extra "^8.1.0"
     joi "^17.6.0"
     lodash "^4.17.21"
@@ -2065,6 +2190,11 @@
   version "3.5.10"
   resolved "https://registry.yarnpkg.com/@tarojs/shared/-/shared-3.5.10.tgz#b46630620fb2a82ccb3393b47f6d4f181dd43ed0"
   integrity sha512-RN2e0fJfYEIofOnhha5CiGN4JtIS2ZU9lRuzASxb1BOdq/cxp+Om2rqATHL0D3Q1jBkf8xMVOZ77BoT0R/pIIw==
+
+"@tarojs/shared@3.5.11":
+  version "3.5.11"
+  resolved "https://registry.yarnpkg.com/@tarojs/shared/-/shared-3.5.11.tgz#1d6676c7931e432ad75a571b23a725fd10a67ba5"
+  integrity sha512-XkPMaLr+RCy2Df7k7IJYj1EixInU0S6Yfe+nVt6I6FVDWRmc66weM4pPfS8kOZrvvOJNb23Rz910zwZApzGuIQ==
 
 "@tarojs/shared@3.5.8":
   version "3.5.8"
@@ -2127,6 +2257,14 @@
   dependencies:
     "@tarojs/api" "3.5.10"
     "@tarojs/runtime" "3.5.10"
+
+"@tarojs/taro@3.5.11":
+  version "3.5.11"
+  resolved "https://registry.yarnpkg.com/@tarojs/taro/-/taro-3.5.11.tgz#7ad1c10387fd01b452cb504dba31505c07ad02ff"
+  integrity sha512-C8vD/vQc0PaRL9muA32+7xqtWPFNCj8Guj8eZtmWJ4UK4A0aJHgN4x4Hl2ILoOuxi4H180wPgNnYPM75jtS1zg==
+  dependencies:
+    "@tarojs/api" "3.5.11"
+    "@tarojs/runtime" "3.5.11"
 
 "@tarojs/taro@3.5.8":
   version "3.5.8"
