@@ -18,7 +18,7 @@
 [sg-image]: https://img.shields.io/badge/view%20on-Sourcegraph-brightgreen.svg?style=flat-square
 [tag-image]: https://img.shields.io/github/tag/funnyzak/taro-starter.svg
 
-基于 `Typescript、 React` 构建 `Taro` 应用脚手架。用于快速开始一个 `Taro` 项目开发。
+基于 `Typescript、 React` 构建 `Taro` 应用脚手架。用于快速开始一个 `Taro` 项目开发。 Taro 版本为 `3.5.11`。
 
 [在线预览](https://funnyzak.github.io/taro-starter/)。
 
