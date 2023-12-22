@@ -1,11 +1,11 @@
-import { useEffect } from 'react';
+import { useEffect } from 'react'
 
-type DependencyList = ReadonlyArray<any>;
+type DependencyList = ReadonlyArray<any>
 
 function useAsyncEffect(effect: () => Promise<any>, deps: DependencyList) {
   useEffect(() => {
-    effect();
+    effect()
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, deps);
+  }, deps)
 }
-export default useAsyncEffect;
+export default useAsyncEffect

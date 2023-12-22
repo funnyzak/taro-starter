@@ -18,7 +18,7 @@
 [sg-image]: https://img.shields.io/badge/view%20on-Sourcegraph-brightgreen.svg?style=flat-square
 [tag-image]: https://img.shields.io/github/tag/funnyzak/taro-starter.svg
 
-基于 `Typescript、 React` 构建 `Taro` 应用脚手架。用于快速开始一个 `Taro` 项目开发。 Taro 版本为 `3.5.11`。
+基于 `Typescript、 React` 构建 `Taro` 应用脚手架。用于快速开始一个 `Taro` 项目开发。 Taro 版本为 `3.6.21`。
 
 [在线预览](https://funnyzak.github.io/taro-starter/)。
 
@@ -28,12 +28,10 @@
 - Typescript 支持
 - React 支持
 - Sass 支持
-- png|svg|jpg|jpeg|gif 引入支持
-- git commit hooks, no 💩
 
 ## Environment
 
-`Node` 建议使用 `Node 14+` 或更高版本。开发工具建议使用 [VS Code](https://code.visualstudio.com/)。
+`Node` 建议使用 `Node 18+` 或更高版本。开发工具建议使用 [VS Code](https://code.visualstudio.com/)。
 
 ## Usage
 
@@ -43,40 +41,40 @@
 git clone git@github.com:funnyzak/taro-starter.git -b master ./taro-react-app
 
 # enter the project directory and install dependency
-cd ./taro-react-app && yarn
+cd ./taro-react-app && pnpm
 
 # develop h5
-yarn dev:h5
+pnpm dev:h5
 
 # develop weapp
-yarn dev:weapp
+pnpm dev:weapp
 
 # build h5
-yarn build:h5
+pnpm build:h5
 
 # eslint
-yarn eslint:check
+pnpm eslint:check
 
 # eslint:fix
-yarn eslint:fix
+pnpm eslint:fix
 
 # prettier check
-yarn prettier:check
+pnpm prettier:check
 
 # prettier fix
-yarn prettier:fix
+pnpm prettier:fix
 
 # eslint and prettier check
-yarn lint:check
+pnpm lint:check
 
 # eslint and prettier fix
-yarn lint:fix
+pnpm lint:fix
 
 # clean node_modules
-yarn clean
+pnpm clean
 ```
 
-More scripts, please see [package.json](./package.json)。
+更多脚步命令请查看 `package.json` 文件。
 
 ## Build
 
@@ -119,18 +117,11 @@ yarn build:weapp
 
 ## Q&A
 
-### 如何打包或开发指定应用配置？
-
-1. 在 `config/` 目录下，复制 `app_sample.js` 文件，重命名为 `app_youname.js`，并修改配置；
-2. 修改配置文件的环境变量配置；
-3. 使用 `npx cross-env APP_ENV=app_youname yarn dev:h5` 命令启动开发；
-4. 使用 `npx cross-env APP_ENV=app_youname yarn build:h5` 命令进行打包（打包输出目录为 `dist/app/yourname`）。
-
 ### 升级Taro
 
 ```bash
 # 升级 Taro CLI 工具:
-yarn add -D @tarojs/cli@latest
+pnpm add -D @tarojs/cli@latest
 
 # 更新项目中 Taro 相关的依赖:
 npx taro update project

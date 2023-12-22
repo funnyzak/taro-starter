@@ -1,14 +1,14 @@
-import 'default-passive-events';
+import { PropsWithChildren } from 'react'
+import { useLaunch } from '@tarojs/taro'
+import './app.scss'
 
-import './app.scss';
-// import { isWechatBrower } from '@/utils'
+function App({ children }: PropsWithChildren<any>) {
+  useLaunch(() => {
+    console.log('App launched.')
+  })
 
-const App = (props: any) => {
-  // console.log('hello world')
-  // this.props.children 是将要会渲染的页面
-  // console.log(navigator.userAgent.toLowerCase())
-  // console.log(isWechatBrower)
-  return props.children;
-};
+  // children 是将要会渲染的页面
+  return children
+}
 
-export default App;
+export default App

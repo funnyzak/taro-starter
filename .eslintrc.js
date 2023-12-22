@@ -1,4 +1,4 @@
-const { defineConfig } = require('eslint-define-config');
+const { defineConfig } = require('eslint-define-config')
 
 module.exports = defineConfig({
   root: true,
@@ -7,12 +7,7 @@ module.exports = defineConfig({
     es2017: true,
     node: true
   },
-  extends: [
-    // add more generic rulesets here, such as:
-    // 'eslint:recommended',
-    'taro/react',
-    'prettier'
-  ],
+  extends: ['taro/react', 'prettier'],
   plugins: ['import', 'react', '@typescript-eslint', 'react-hooks', 'jsx-a11y', 'html'],
   parser: '@typescript-eslint/parser',
   globals: {
@@ -24,8 +19,9 @@ module.exports = defineConfig({
     Page: 'readonly'
   },
   rules: {
-    'semi': ['error', 'always'],
+    'semi': ['error', 'never'],
     'comma-dangle': ['error', 'never'],
+    'no-undef': 'off',
     'jsx-quotes': ['error', 'prefer-double'],
     'func-names': 'off',
     'import/no-unresolved': 'off',
@@ -49,4 +45,4 @@ module.exports = defineConfig({
       }
     ]
   }
-});
+})

@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [16.x]
+        node-version: [18.x]
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -63,21 +63,14 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-      - name: Restore yarn cache
-        uses: actions/cache@v3
-        with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('**/yarn.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
       - name: Install dependencies
         run: |
-          yarn
+          pnpm i
       - name: Buid for ${{ env.DIST_PLATFORM_NAMES }}
         run: |
           for platform in ${{ env.DIST_PLATFORM_NAMES }}; do
             # build
-            yarn build:$platform
+            pnpm build:$platform
             # set dist zip name
           done
       - name: Deploy github page

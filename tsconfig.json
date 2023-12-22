@@ -8,8 +8,12 @@
     "experimentalDecorators": true,
     "noImplicitAny": false,
     "outDir": "lib",
+    "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noUnusedLocals": false,
+    "baseUrl": ".",
+    "rootDir": ".",
+    "jsx": "react-jsx",
+    "resolveJsonModule": true,
     // 允许从没有设置默认导出的模块中默认导入。这并不影响代码的输出，仅为了类型检查。
     "allowSyntheticDefaultImports": true,
     // 用来指定编译时是否生成.map文件
@@ -28,17 +32,26 @@
     "strictPropertyInitialization": true,
     // 不允许对同一个文件使用不一致格式的引用
     "forceConsistentCasingInFileNames": true,
-    "baseUrl": ".",
-    "rootDir": ".",
+    "typeRoots": [
+      "node_modules/@types"
+    ],
     "paths": {
-      "@/*": ["./src/*"],
-      "@/package": ["./package.json"],
-      "@/config": ["./config/index.js"]
-    },
-    "jsx": "preserve",
-    "jsxFactory": "React.createElement",
-    "typeRoots": ["node_modules/@types"]
+      "@/*": [
+        "./src/*"
+      ],
+      "@/package": [
+        "./package.json"
+      ],
+      "@/config": [
+        "./config/index.js"
+      ]
+    }
   },
+  "include": [
+    "./src",
+    "./types",
+    "./config"
+  ],
   "exclude": [
     "__tests__",
     "node_modules",
