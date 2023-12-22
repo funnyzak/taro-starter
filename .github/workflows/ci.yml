@@ -59,13 +59,30 @@ jobs:
         with:
           configuration: '.github/config/changelog_configuration.json'
           ignorePreReleases: 'false'
-      - name: Use Node.js
-        uses: actions/setup-node@v3
+      - uses: actions/setup-node@v3
+        name: Use Node.js
         with:
           node-version: ${{ matrix.node-version }}
-      - name: Install dependencies
+      - uses: pnpm/action-setup@v2
+        name: Install pnpm
+        with:
+          version: 8
+          run_install: false
+      - name: Get pnpm store directory
+        shell: bash
         run: |
-          pnpm i
+          echo "STORE_PATH=$(pnpm store path --silent)" >> $GITHUB_ENV
+
+      - uses: actions/cache@v3
+        name: Setup pnpm cache
+        with:
+          path: ${{ env.STORE_PATH }}
+          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-store-
+      - name: Lint
+        run: |
+          pnpm install
       - name: Buid for ${{ env.DIST_PLATFORM_NAMES }}
         run: |
           for platform in ${{ env.DIST_PLATFORM_NAMES }}; do
